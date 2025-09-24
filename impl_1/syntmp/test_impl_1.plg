@@ -1,0 +1,22 @@
+@P:  Worst Slack : -9.382
+@P:  clk_gen|clk_48mhz_inferred_clock - Estimated Frequency : 115.2 MHz
+@P:  clk_gen|clk_48mhz_inferred_clock - Requested Frequency : 200.0 MHz
+@P:  clk_gen|clk_48mhz_inferred_clock - Estimated Period : 8.680
+@P:  clk_gen|clk_48mhz_inferred_clock - Requested Period : 5.000
+@P:  clk_gen|clk_48mhz_inferred_clock - Slack : -3.680
+@P:  clk_gen|clk_divided_derived_clock - Estimated Frequency : 186.2 MHz
+@P:  clk_gen|clk_divided_derived_clock - Requested Frequency : 200.0 MHz
+@P:  clk_gen|clk_divided_derived_clock - Estimated Period : 5.372
+@P:  clk_gen|clk_divided_derived_clock - Requested Period : 5.000
+@P:  clk_gen|clk_divided_derived_clock - Slack : -0.744
+@P:  System - Estimated Frequency : 78.0 MHz
+@P:  System - Requested Frequency : 200.0 MHz
+@P:  System - Estimated Period : 12.816
+@P:  System - Requested Period : 5.000
+@P:  System - Slack : -7.816
+@P: lab3_mt Part : ice40up5ksg48i-6
+@P: lab3_mt I/O primitives : 23
+@P: lab3_mt I/O Register bits : 0
+@P: lab3_mt Register bits (Non I/O) : 63 (1%)
+@P: lab3_mt Total Luts : 104 of 5280 (1%)
+@P:  CPU Time : 0h:00m:02s

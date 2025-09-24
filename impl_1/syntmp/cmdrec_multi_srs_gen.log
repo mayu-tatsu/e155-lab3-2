@@ -1,0 +1,7 @@
+C:\lscc\radiant\2024.2\synpbase\bin64\syn_nfilter.exe  -link  -top  lab3_mt  -multisrs  C:\Users\mtatsumi\my_designs\test\impl_1\synwork\test_impl_1_comp.srs  -osyn  C:\Users\mtatsumi\my_designs\test\impl_1\synwork\test_impl_1_mult.srs  -log  C:\Users\mtatsumi\my_designs\test\impl_1\synlog\test_impl_1_multi_srs_gen.srr 
+relcom:..\..\..\..\..\..\lscc\radiant\2024.2\synpbase\bin64\syn_nfilter.exe -link -top lab3_mt -multisrs ..\synwork\test_impl_1_comp.srs -osyn ..\synwork\test_impl_1_mult.srs -log ..\synlog\test_impl_1_multi_srs_gen.srr
+rc:0 success:1 runtime:1
+file:..\synwork\test_impl_1_comp.srs|io:i|time:1758713657|size:11313|exec:0|csum:9EBA9692CAB9B7E9D35DDEC0E1F3A5F7
+file:..\synwork\test_impl_1_mult.srs|io:o|time:1758713658|size:3976|exec:0|csum:
+file:..\synlog\test_impl_1_multi_srs_gen.srr|io:o|time:1758713659|size:1139|exec:0|csum:
+file:..\..\..\..\..\..\lscc\radiant\2024.2\synpbase\bin64\syn_nfilter.exe|io:i|time:1727995156|size:10549248|exec:1|csum:3501020B7559310BA5AA5C00F98234AE

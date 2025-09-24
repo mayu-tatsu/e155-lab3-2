@@ -1,0 +1,7 @@
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+@N: MO225 :"c:\users\mtatsumi\my_designs\test\source\impl_1\debouncer.sv":21:4:21:12|There are no possible illegal states for state machine state[3:0] (in view: work.debouncer(verilog)); safe FSM implementation is not required.
+@N: FX1184 |Applying syn_allowed_resources blockrams=30 on top level netlist lab3_mt 
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+@N: BN225 |Writing default property annotation file C:\Users\mtatsumi\my_designs\test\impl_1\test_impl_1.sap.

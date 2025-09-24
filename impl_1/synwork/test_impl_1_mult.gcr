@@ -1,0 +1,32 @@
+i clk_generation.clk_divided
+m 0 0
+u 28 40
+n ckid0_0 {t:selector.alternate_led.C} Clock Optimization not enabled
+p {p:selector.clk}{t:selector.alternate_led.C}
+e ckid0_0 {t:selector.alternate_led.C} sdffr
+p {p:storage.clk}{t:storage.sw_prev_input[3:0].C}
+e ckid0_1 {t:storage.sw_prev_input[3:0].C} sdffre
+p {p:debounce.clk}{t:debounce.state[1].C}
+e ckid0_2 {t:debounce.state[1].C} dff
+p {p:timer.clk}{t:timer.timer_done_register.C}
+e ckid0_3 {t:timer.timer_done_register.C} dff
+p {p:keypad_input.clk}{t:keypad_input.state[19].C}
+e ckid0_4 {t:keypad_input.state[19].C} dff
+p {p:sync.clk}{t:sync.temp_col[3:0].C}
+e ckid0_5 {t:sync.temp_col[3:0].C} sdffr
+d ckid0_0,ckid0_1,ckid0_2,ckid0_3,ckid0_4,ckid0_5 {t:clk_generation.clk_divided.Q[0]} dffe Clock Optimization not enabled
+i clk_generation.clk_48mhz
+m 0 0
+u 2 23
+n ckid0_6 {t:clk_generation.clk_divided.C} Clock Optimization not enabled
+p {t:clk_generation.clk_48mhz_inferred_clock.OUT[0]}{t:clk_generation.clk_divided.C}
+e ckid0_6 {t:clk_generation.clk_divided.C} dffe
+d ckid0_6 {t:clk_generation.hf_osc.CLKHF} HSOSC Clock Optimization not enabled
+i clk_generation.clk_divided_i
+m 0 0
+u 0 0
+i clk_generation.clk_48mhz_i
+m 0 0
+u 0 0
+l 0 0 0 0 0 0
+r 0 0 0 0 0 0 0 0

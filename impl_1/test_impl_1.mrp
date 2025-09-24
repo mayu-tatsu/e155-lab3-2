@@ -1,0 +1,208 @@
+
+                         Lattice Mapping Report File
+
+Design:  lab3_mt
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:  High-Performance_1.2V
+
+Mapper:    version Radiant Software (64-bit) 2024.2.0.3.0
+Mapped on: Wed Sep 24 04:37:26 2025
+
+Design Information
+------------------
+
+Command line:   map -pdc C:/Users/mtatsumi/my_designs/test/pinmap.pdc -i
+     test_impl_1_syn.udb -o test_impl_1_map.udb -mp test_impl_1.mrp -hierrpt
+     -gui -msgset C:/Users/mtatsumi/my_designs/test/promote.xml
+
+Design Summary
+--------------
+
+   Number of slice registers:  63 out of  5280 (1%)
+   Number of I/O registers:      0 out of   117 (0%)
+   Number of LUT4s:           141 out of  5280 (3%)
+      Number of logic LUT4s:             105
+      Number of inserted feedthru LUT4s:  13
+      Number of replicated LUT4s:          1
+      Number of ripple logic:             11 (22 LUT4s)
+   Number of IO sites used:   23 out of 39 (59%)
+      Number of IO sites used for general PIO: 23
+      Number of IO sites used for I3C: 0 out of 2 (0%)
+      (note: If I3C is not used, its site can be used as general PIO)
+      Number of IO sites used for PIO+I3C: 23 out of 36 (64%)
+      Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
+      (note: If RGB LED drivers are not used, sites can be used as OD outputs,
+       see TN1288 iCE40 LED Driver Usage Guide)
+      Number of IO sites used for PIO+I3C+OD+RGB: 23 out of 39 (59%)
+   Number of DSPs:             0 out of 8 (0%)
+   Number of I2Cs:             0 out of 2 (0%)
+   Number of High Speed OSCs:  1 out of 1 (100%)
+   Number of Low Speed OSCs:   0 out of 1 (0%)
+   Number of RGB PWM:          0 out of 1 (0%)
+   Number of RGB Drivers:      0 out of 1 (0%)
+   Number of SCL FILTERs:      0 out of 2 (0%)
+   Number of SRAMs:            0 out of 4 (0%)
+   Number of WARMBOOTs:        0 out of 1 (0%)
+   Number of SPIs:             0 out of 2 (0%)
+   Number of EBRs:             0 out of 30 (0%)
+   Number of PLLs:             0 out of 1 (0%)
+   Number of Clocks:  2
+      Net clk_c: 40 loads, 40 rising, 0 falling (Driver: Pin
+     clk_generation.clk_divided.ff_inst/Q)
+      Net clk_generation.clk_48mhz: 13 loads, 13 rising, 0 falling (Driver: Pin
+     clk_generation.hf_osc.osc_inst/CLKHF)
+   Number of Clock Enables:  3
+      Net clk_generation.counter8_i: 1 loads, 1 SLICEs
+      Net row_obuf[0].vcc: 1 loads, 0 SLICEs
+      Net storage.key_onebit_db_0: 8 loads, 8 SLICEs
+   Number of LSRs:  2
+      Net reset_c_i: 17 loads, 17 SLICEs
+      Net clk_generation.counter8_i_iso: 12 loads, 12 SLICEs
+
+                                    Page 1
+
+
+
+
+
+Design Summary (cont)
+---------------------
+   Top 10 highest fanout non-clock nets:
+      Net reset_c: 17 loads
+      Net reset_c_i: 17 loads
+      Net sync_col_c[3]: 15 loads
+      Net keypad_input.un20_li[2]: 14 loads
+      Net keypad_input.un20_li[3]: 14 loads
+      Net clk_generation.counter8_i_iso: 12 loads
+      Net keypad_input.un20_li[4]: 12 loads
+      Net keypad_input.N_170_8: 11 loads
+      Net keypad_input.N_171: 10 loads
+      Net keypad_input.state[19]: 9 loads
+
+
+
+
+
+   Number of warnings:  0
+   Number of criticals: 0
+   Number of errors:    0
+
+Design Errors/Criticals/Warnings
+--------------------------------
+
+   No error, critical, or warning presents.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+-------+-------+-----------+
+| IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
+|                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
++---------------------+-----------+-----------+-------+-------+-----------+
+| reset               | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| async_col[0]        | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| async_col[1]        | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| async_col[2]        | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| async_col[3]        | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| row[0]              | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| row[1]              | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| row[2]              | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| row[3]              | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| seg1en              | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| seg2en              | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| seg[0]              | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| seg[1]              | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+
+                                    Page 2
+
+
+
+
+
+IO (PIO) Attributes (cont)
+--------------------------
+| seg[2]              | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| seg[3]              | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| seg[4]              | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| seg[5]              | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| seg[6]              | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| clk                 | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| sync_col[0]         | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| sync_col[1]         | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| sync_col[2]         | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| sync_col[3]         | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+
+Removed logic
+-------------
+
+Block GND_cZ was optimized away.
+
+OSC Summary
+-----------
+
+OSC 1:                                 Pin/Node Value
+  OSC Instance Name:                            clk_generation/hf_osc.osc_inst
+  Power UP:                            NODE     row_obuf[0].vcc
+  Enable Signal:                       NODE     row_obuf[0].vcc
+  OSC Output:                          NODE     clk_generation.clk_48mhz
+  DIV Setting:                                  00
+
+ASIC Components
+---------------
+
+Instance Name: clk_generation/hf_osc.osc_inst
+         Type: HFOSC
+
+Constraint Summary
+------------------
+
+   Total number of constraints: 27
+   Total number of constraints dropped: 0
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs
+   Total REAL Time: 0 secs
+   Peak Memory Usage: 68 MB
+Checksum -- map: 86296880808edcb9d099b5aea1663d3e69d6df62
+
+
+
+                                    Page 3
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995
+     AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent
+     Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems
+     All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor
+     Corporation,  All rights reserved.

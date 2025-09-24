@@ -1,0 +1,13 @@
+#List of actual used RTLs.
+
+File                                                                                          Type     IN_PROJECT/INCLUDED/LIBRARY
+
+"C:\Users\mtatsumi\my_designs\test\source\impl_1\lab3_mt.sv"                               verilog                      IN PROJECT
+"C:\Users\mtatsumi\my_designs\test\source\impl_1\sev_seg.sv"                               verilog                      IN PROJECT
+"C:\Users\mtatsumi\my_designs\test\source\impl_1\sev_seg_sel.sv"                           verilog                      IN PROJECT
+"C:\Users\mtatsumi\my_designs\test\source\impl_1\keypad_storage.sv"                        verilog                      IN PROJECT
+"C:\Users\mtatsumi\my_designs\test\source\impl_1\debouncer.sv"                             verilog                      IN PROJECT
+"C:\Users\mtatsumi\my_designs\test\source\impl_1\debouncer_timer.sv"                       verilog                      IN PROJECT
+"C:\Users\mtatsumi\my_designs\test\source\impl_1\keypad.sv"                                verilog                      IN PROJECT
+"C:\Users\mtatsumi\my_designs\test\source\impl_1\synchronizer.sv"                          verilog                      IN PROJECT
+"C:\Users\mtatsumi\my_designs\test\source\impl_1\clk_gen.sv"                               verilog                      IN PROJECT

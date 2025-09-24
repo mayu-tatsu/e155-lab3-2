@@ -1,0 +1,38 @@
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+@N: BZ173 :"c:\users\mtatsumi\my_designs\test\source\impl_1\keypad.sv":95:8:95:11|ROM keypad_val_1[4:0] (in view: work.keypad(verilog)) mapped in logic.
+@N: BZ173 :"c:\users\mtatsumi\my_designs\test\source\impl_1\keypad.sv":95:8:95:11|ROM row_1[3:0] (in view: work.keypad(verilog)) mapped in logic.
+@N: BZ173 :"c:\users\mtatsumi\my_designs\test\source\impl_1\keypad.sv":95:8:95:11|ROM keypad_val_1[4:0] (in view: work.keypad(verilog)) mapped in logic.
+@N: MO106 :"c:\users\mtatsumi\my_designs\test\source\impl_1\keypad.sv":95:8:95:11|Found ROM keypad_val_1[4:0] (in view: work.keypad(verilog)) with 20 words by 5 bits.
+@N: BZ173 :"c:\users\mtatsumi\my_designs\test\source\impl_1\keypad.sv":95:8:95:11|ROM row_1[3:0] (in view: work.keypad(verilog)) mapped in logic.
+@N: MO106 :"c:\users\mtatsumi\my_designs\test\source\impl_1\keypad.sv":95:8:95:11|Found ROM row_1[3:0] (in view: work.keypad(verilog)) with 20 words by 4 bits.
+@N: BZ173 :"c:\users\mtatsumi\my_designs\test\source\impl_1\sev_seg.sv":16:1:16:4|ROM dual_segs.seg_1[6:0] (in view: work.lab3_mt(verilog)) mapped in logic.
+@N: BZ173 :"c:\users\mtatsumi\my_designs\test\source\impl_1\sev_seg.sv":16:1:16:4|ROM dual_segs.seg_1[6:0] (in view: work.lab3_mt(verilog)) mapped in logic.
+@N: MO106 :"c:\users\mtatsumi\my_designs\test\source\impl_1\sev_seg.sv":16:1:16:4|Found ROM dual_segs.seg_1[6:0] (in view: work.lab3_mt(verilog)) with 16 words by 7 bits.
+@N: FX493 |Applying initial value "1" on instance state[0].
+@N: FX493 |Applying initial value "0" on instance state[1].
+@N: FX493 |Applying initial value "0" on instance state[2].
+@N: FX493 |Applying initial value "0" on instance state[3].
+@N: FX493 |Applying initial value "0" on instance state[4].
+@N: FX493 |Applying initial value "0" on instance state[5].
+@N: FX493 |Applying initial value "0" on instance state[6].
+@N: FX493 |Applying initial value "0" on instance state[7].
+@N: FX493 |Applying initial value "0" on instance state[8].
+@N: FX493 |Applying initial value "0" on instance state[9].
+@N: FX493 |Applying initial value "0" on instance state[10].
+@N: FX493 |Applying initial value "0" on instance state[11].
+@N: FX493 |Applying initial value "0" on instance state[12].
+@N: FX493 |Applying initial value "0" on instance state[13].
+@N: FX493 |Applying initial value "0" on instance state[14].
+@N: FX493 |Applying initial value "0" on instance state[15].
+@N: FX493 |Applying initial value "0" on instance state[16].
+@N: FX493 |Applying initial value "0" on instance state[17].
+@N: FX493 |Applying initial value "0" on instance state[18].
+@N: FX493 |Applying initial value "0" on instance state[19].
+@N: FX271 :"c:\users\mtatsumi\my_designs\test\source\impl_1\clk_gen.sv":23:1:23:9|Replicating instance clk_generation.counter8_i (in view: work.lab3_mt(verilog)) with 23 loads 1 time to improve timing.
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+@N: MT615 |Found clock clk_gen|clk_divided_derived_clock with period 5.00ns 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.

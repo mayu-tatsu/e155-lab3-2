@@ -1,0 +1,14 @@
+%%% protect protected_file
+#OPTIONS:"|-bldtbl|-prodtype|synplify_pro|-primux|-fixsmult|-infer_seqShift|-sdff_counter|-nram|-divnmod|-nostructver|-lattice|-ice|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-work_is_curlib|0|-ignore_undefined_lib|-lib|pmi"
+#CUR:"C:\\lscc\\radiant\\2024.2\\synpbase\\bin64\\c_vhdl.exe":1727995157
+#CUR:"C:\\lscc\\radiant\\2024.2\\synpbase\\lib\\vhd\\location.map":1730962033
+#CUR:"C:\\lscc\\radiant\\2024.2\\synpbase\\lib\\vhd\\std.vhd":1727995172
+#CUR:"C:\\lscc\\radiant\\2024.2\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1727995172
+#CUR:"C:\\lscc\\radiant\\2024.2\\synpbase\\lib\\vhd\\std1164.vhd":1727995172
+#CUR:"C:\\lscc\\radiant\\2024.2\\synpbase\\lib\\vhd\\numeric.vhd":1727995172
+#CUR:"C:\\lscc\\radiant\\2024.2\\synpbase\\lib\\vhd\\umr_capim.vhd":1727995172
+#CUR:"C:\\lscc\\radiant\\2024.2\\synpbase\\lib\\vhd\\arith.vhd":1727995172
+#CUR:"C:\\lscc\\radiant\\2024.2\\synpbase\\lib\\vhd\\unsigned.vhd":1727995172
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\pmi_iCE40UP.vhd":1648538958
+@E
+@ 

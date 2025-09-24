@@ -1,0 +1,27 @@
+---------------------------------------
+Resource Usage Report for lab3_mt 
+
+Mapping to part: ice40up5ksg48i-6
+Cell usage:
+CCU2_B          11 uses
+FD1P3DZ         24 uses
+FD1P3IZ         39 uses
+HSOSC           1 use
+VHI             9 uses
+VLO             9 uses
+LUT4            104 uses
+
+I/O ports: 23
+I/O primitives: 23
+IB             5 uses
+OB             18 uses
+
+I/O Register bits:                  0
+Register bits not including I/Os:   63 of 5280 (1%)
+
+@S |Mapping Summary:
+Total  LUTs: 104 (1%)
+
+Distribution of All Consumed LUTs = LUT4 
+Distribution of All Consumed LUTs 104 = 104 
+

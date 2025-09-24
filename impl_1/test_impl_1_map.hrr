@@ -1,0 +1,80 @@
+---------------------------------------------------
+Report for cell lab3_mt
+   Instance path: lab3_mt
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        141        100.0
+                               LUTGATE	        119        100.0
+                                LUTCCU	         22        100.0
+                                 IOBUF	         23        100.0
+                                PFUREG	         63        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                               clk_gen	          1        22.0
+                             debouncer	          1         2.8
+                       debouncer_timer	          1         0.0
+                                keypad	          1        51.1
+                        keypad_storage	          1         2.8
+                               sev_seg	          1         5.0
+                           sev_seg_sel	          1         3.5
+                          synchronizer	          1         0.0
+---------------------------------------------------
+Report for cell clk_gen
+   Instance path: lab3_mt/clk_generation
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         31        22.0
+                               LUTGATE	          9         7.6
+                                LUTCCU	         22        100.0
+                                PFUREG	         23        36.5
+---------------------------------------------------
+Report for cell synchronizer
+   Instance path: lab3_mt/sync
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          8        12.7
+---------------------------------------------------
+Report for cell keypad
+   Instance path: lab3_mt/keypad_input
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         72        51.1
+                               LUTGATE	         72        60.5
+                                PFUREG	         20        31.7
+---------------------------------------------------
+Report for cell debouncer_timer
+   Instance path: lab3_mt/timer
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          1         1.6
+---------------------------------------------------
+Report for cell debouncer
+   Instance path: lab3_mt/debounce
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          4         2.8
+                               LUTGATE	          4         3.4
+                                PFUREG	          2         3.2
+---------------------------------------------------
+Report for cell keypad_storage
+   Instance path: lab3_mt/storage
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          4         2.8
+                               LUTGATE	          4         3.4
+                                PFUREG	          8        12.7
+---------------------------------------------------
+Report for cell sev_seg_sel
+   Instance path: lab3_mt/selector
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          5         3.5
+                               LUTGATE	          5         4.2
+                                PFUREG	          1         1.6
+---------------------------------------------------
+Report for cell sev_seg
+   Instance path: lab3_mt/dual_segs
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          7         5.0
+                               LUTGATE	          7         5.9

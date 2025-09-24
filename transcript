@@ -1,0 +1,1373 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading project test_lab3_mt
+# Compile of clk_gen.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of debouncer_timer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_debouncer.sv failed with 1 errors.
+# Compile of testbench_debouncer_timer.sv was successful.
+# Compile of testbench_keypad.sv failed with 2 errors.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# 18 compiles, 2 failed with 3 errors.
+# Compile of clk_gen.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of debouncer_timer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_debouncer.sv was successful.
+# Compile of testbench_debouncer_timer.sv was successful.
+# Compile of testbench_keypad.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# 18 compiles, 0 failed with no errors.
+vsim -gui work.testbench_clk_gen {-voptargs=+acc -L iCE40UP}
+# vsim -gui work.testbench_clk_gen -voptargs="+acc -L iCE40UP" 
+# Start time: 00:23:12 on Sep 24,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_clk_gen(fast)
+# Loading work.clk_gen(fast)
+# Loading iCE40UP.HSOSC(fast)
+add wave  \
+sim:/testbench_clk_gen/clk \
+sim:/testbench_clk_gen/reset \
+sim:/testbench_clk_gen/test_clk
+run 100000000000
+# Fail: test_clk = 1'b1. Expecting 1'b0.
+# Fail: test_clk = 1'b0. Expecting 1'b1.
+# Completed test for clk generation.
+# ** Note: $stop    : C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv(34)
+#    Time: 20 ns  Iteration: 0  Instance: /testbench_clk_gen
+# Break in Module testbench_clk_gen at C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv line 34
+# Compile of clk_gen.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of debouncer_timer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_debouncer.sv was successful.
+# Compile of testbench_debouncer_timer.sv was successful.
+# Compile of testbench_keypad.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# 18 compiles, 0 failed with no errors.
+vsim -gui {-voptargs=+acc -L iCE40UP} work.testbench_clk_gen
+# End time: 00:25:33 on Sep 24,2025, Elapsed time: 0:02:21
+# Errors: 0, Warnings: 8
+# vsim -gui -voptargs="+acc -L iCE40UP" work.testbench_clk_gen 
+# Start time: 00:25:33 on Sep 24,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_clk_gen(fast)
+# Loading work.clk_gen(fast)
+# Loading iCE40UP.HSOSC(fast)
+# ** Error (suppressible): (vsim-3839) Variable '/testbench_clk_gen/clk', driven via a port connection, is multiply driven. See C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv(13).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_clk_gen File: C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv Line: 18
+# ** Error (suppressible): (vsim-3839) Variable '/testbench_clk_gen/clk', driven via a port connection, is multiply driven. See C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv(13).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_clk_gen File: C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv Line: 18
+# Error loading design
+# End time: 00:25:57 on Sep 24,2025, Elapsed time: 0:00:24
+# Errors: 2, Warnings: 2
+# Compile of clk_gen.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of debouncer_timer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_debouncer.sv was successful.
+# Compile of testbench_debouncer_timer.sv was successful.
+# Compile of testbench_keypad.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# 18 compiles, 0 failed with no errors.
+vsim -gui {-voptargs=+acc -L iCE40UP} work.clk_gen
+# vsim -gui -voptargs="+acc -L iCE40UP" work.clk_gen 
+# Start time: 00:27:05 on Sep 24,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.clk_gen(fast)
+# Loading iCE40UP.HSOSC(fast)
+add wave  \
+sim:/clk_gen/clk \
+sim:/clk_gen/clk_48mhz \
+sim:/clk_gen/counter \
+sim:/clk_gen/clk_divided
+run 100000000000
+vsim -gui {-voptargs=+acc -L iCE40UP} work.testbench_clk_gen
+# End time: 00:28:32 on Sep 24,2025, Elapsed time: 0:01:27
+# Errors: 0, Warnings: 3
+# vsim -gui -voptargs="+acc -L iCE40UP" work.testbench_clk_gen 
+# Start time: 00:28:32 on Sep 24,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_clk_gen(fast)
+# Loading work.clk_gen(fast)
+# Loading iCE40UP.HSOSC(fast)
+add wave  \
+sim:/testbench_clk_gen/clk \
+sim:/testbench_clk_gen/reset \
+sim:/testbench_clk_gen/test_clk
+run 100000000000
+# Fail: test_clk = 1'b1. Expecting 1'b0.
+# Fail: test_clk = 1'b0. Expecting 1'b1.
+# Completed testbench for clk_gen.sv.
+# ** Note: $stop    : C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv(34)
+#    Time: 20 ns  Iteration: 0  Instance: /testbench_clk_gen
+# Break in Module testbench_clk_gen at C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv line 34
+# Compile of clk_gen.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of debouncer_timer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_debouncer.sv was successful.
+# Compile of testbench_debouncer_timer.sv was successful.
+# Compile of testbench_keypad.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# 18 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.testbench_clk_gen(fast)
+# Loading work.clk_gen(fast)
+# Loading iCE40UP.HSOSC(fast)
+run 100000000000
+# Fail: test_clk = 1'b1. Expecting 1'b0.
+# Fail: test_clk = 1'b0. Expecting 1'b1.
+# Completed testbench for clk_gen.sv.
+# ** Note: $stop    : C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv(34)
+#    Time: 20 ns  Iteration: 0  Instance: /testbench_clk_gen
+# Break in Module testbench_clk_gen at C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv line 34
+# Compile of clk_gen.sv failed with 1 errors.
+# Compile of debouncer.sv was successful.
+# Compile of debouncer_timer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_debouncer.sv was successful.
+# Compile of testbench_debouncer_timer.sv was successful.
+# Compile of testbench_keypad.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# 18 compiles, 1 failed with 1 error.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.testbench_clk_gen(fast)
+# Loading work.clk_gen(fast)
+# Loading iCE40UP.HSOSC(fast)
+run 100000000000
+# Fail: test_clk = 1'b1. Expecting 1'b0.
+# Fail: test_clk = 1'b0. Expecting 1'b1.
+# Completed testbench for clk_gen.sv.
+# ** Note: $stop    : C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv(34)
+#    Time: 20 ns  Iteration: 0  Instance: /testbench_clk_gen
+# Break in Module testbench_clk_gen at C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv line 34
+# Compile of clk_gen.sv failed with 1 errors.
+# Compile of debouncer.sv was successful.
+# Compile of debouncer_timer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_debouncer.sv was successful.
+# Compile of testbench_debouncer_timer.sv was successful.
+# Compile of testbench_keypad.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# 18 compiles, 1 failed with 1 error.
+# Compile of clk_gen.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of debouncer_timer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_debouncer.sv was successful.
+# Compile of testbench_debouncer_timer.sv was successful.
+# Compile of testbench_keypad.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# 18 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_clk_gen(fast)
+# Loading work.clk_gen(fast)
+# Loading iCE40UP.HSOSC(fast)
+run 100000000000
+# Fail: test_clk = 1'b1. Expecting 1'b0.
+# Fail: test_clk = 1'b0. Expecting 1'b1.
+# Completed testbench for clk_gen.sv.
+# ** Note: $stop    : C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv(34)
+#    Time: 20 ns  Iteration: 0  Instance: /testbench_clk_gen
+# Break in Module testbench_clk_gen at C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv line 34
+add wave  \
+sim:/testbench_clk_gen/clk \
+sim:/testbench_clk_gen/reset \
+sim:/testbench_clk_gen/test_clk
+# Compile of clk_gen.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of debouncer_timer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_debouncer.sv was successful.
+# Compile of testbench_debouncer_timer.sv was successful.
+# Compile of testbench_keypad.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# 18 compiles, 0 failed with no errors.
+# Load canceled
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_clk_gen(fast)
+# Loading work.clk_gen(fast)
+# Loading iCE40UP.HSOSC(fast)
+add wave  \
+sim:/testbench_clk_gen/clk \
+sim:/testbench_clk_gen/reset \
+sim:/testbench_clk_gen/test_clk
+run 100000000000
+# Fail: test_clk = 1'b1. Expecting 1'b0.
+# Fail: test_clk = 1'b0. Expecting 1'b1.
+# Completed testbench for clk_gen.sv.
+# ** Note: $stop    : C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv(34)
+#    Time: 20 ns  Iteration: 0  Instance: /testbench_clk_gen
+# Break in Module testbench_clk_gen at C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv line 34
+# Compile of clk_gen.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of debouncer_timer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_debouncer.sv was successful.
+# Compile of testbench_debouncer_timer.sv was successful.
+# Compile of testbench_keypad.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# 18 compiles, 0 failed with no errors.
+run 100000000000
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_clk_gen(fast)
+# Loading work.clk_gen(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Compile of clk_gen.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of debouncer_timer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_debouncer.sv was successful.
+# Compile of testbench_debouncer_timer.sv was successful.
+# Compile of testbench_keypad.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# 18 compiles, 0 failed with no errors.
+run 1000000
+# Fail: test_clk = 1'b1. Expecting 1'b0.
+# Fail: test_clk = 1'b0. Expecting 1'b1.
+# Completed testbench for clk_gen.sv.
+# ** Note: $stop    : C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv(34)
+#    Time: 20 ns  Iteration: 0  Instance: /testbench_clk_gen
+# Break in Module testbench_clk_gen at C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv line 34
+# Compile of clk_gen.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of debouncer_timer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_debouncer.sv was successful.
+# Compile of testbench_debouncer_timer.sv was successful.
+# Compile of testbench_keypad.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# 18 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_clk_gen(fast)
+# Loading work.clk_gen(fast)
+# Loading iCE40UP.HSOSC(fast)
+run 1000000
+# Fail: test_clk = 1'b1. Expecting 1'b0.
+# Fail: test_clk = 1'b0. Expecting 1'b1.
+# Completed testbench for clk_gen.sv.
+# ** Note: $stop    : C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv(34)
+#    Time: 20 ns  Iteration: 0  Instance: /testbench_clk_gen
+# Break in Module testbench_clk_gen at C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv line 34
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.testbench_clk_gen(fast)
+# Loading work.clk_gen(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Compile of clk_gen.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of debouncer_timer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_debouncer.sv was successful.
+# Compile of testbench_debouncer_timer.sv was successful.
+# Compile of testbench_keypad.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# 18 compiles, 0 failed with no errors.
+run 1000000
+# Fail: test_clk = 1'b1. Expecting 1'b0.
+# Fail: test_clk = 1'b0. Expecting 1'b1.
+# Completed testbench for clk_gen.sv.
+# ** Note: $stop    : C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv(34)
+#    Time: 20 ns  Iteration: 0  Instance: /testbench_clk_gen
+# Break in Module testbench_clk_gen at C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv line 34
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_clk_gen(fast)
+# Loading work.clk_gen(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Compile of clk_gen.sv failed with 1 errors.
+# Compile of debouncer.sv was successful.
+# Compile of debouncer_timer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_debouncer.sv was successful.
+# Compile of testbench_debouncer_timer.sv was successful.
+# Compile of testbench_keypad.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# 18 compiles, 1 failed with 1 error.
+run 1000000
+# Fail: test_clk = 1'b1. Expecting 1'b0.
+# Fail: test_clk = 1'b0. Expecting 1'b1.
+# Completed testbench for clk_gen.sv.
+# ** Note: $stop    : C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv(34)
+#    Time: 20 ns  Iteration: 0  Instance: /testbench_clk_gen
+# Break in Module testbench_clk_gen at C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv line 34
+vsim -gui {-voptargs=+acc -L iCE40UP} work.testbench_clk_gen
+# End time: 00:43:05 on Sep 24,2025, Elapsed time: 0:14:33
+# Errors: 0, Warnings: 3
+# vsim -gui -voptargs="+acc -L iCE40UP" work.testbench_clk_gen 
+# Start time: 00:43:05 on Sep 24,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Error: C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv(14): (vopt-2135) Too many port connections. Expected 1, found 2.
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
+# Error loading design
+# End time: 00:43:05 on Sep 24,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+# Compile of clk_gen.sv failed with 1 errors.
+# Compile of debouncer.sv was successful.
+# Compile of debouncer_timer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_debouncer.sv was successful.
+# Compile of testbench_debouncer_timer.sv was successful.
+# Compile of testbench_keypad.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# 18 compiles, 1 failed with 1 error.
+# Compile of clk_gen.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of debouncer_timer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_debouncer.sv was successful.
+# Compile of testbench_debouncer_timer.sv was successful.
+# Compile of testbench_keypad.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# 18 compiles, 0 failed with no errors.
+vsim -gui {-voptargs=+acc -L iCE40UP} work.testbench_clk_gen
+# vsim -gui -voptargs="+acc -L iCE40UP" work.testbench_clk_gen 
+# Start time: 00:44:46 on Sep 24,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_clk_gen(fast)
+# Loading work.clk_gen(fast)
+# Loading iCE40UP.HSOSC(fast)
+add wave  \
+sim:/testbench_clk_gen/clk \
+sim:/testbench_clk_gen/reset \
+sim:/testbench_clk_gen/test_clk \
+sim:/testbench_clk_gen/hsosc_clk
+run 1000000
+# Fail: test_clk = 1'b1. Expecting 1'b0.
+# Fail: test_clk = 1'b0. Expecting 1'b1.
+# Completed testbench for clk_gen.sv.
+# ** Note: $stop    : C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv(34)
+#    Time: 20 ns  Iteration: 0  Instance: /testbench_clk_gen
+# Break in Module testbench_clk_gen at C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv line 34
+# Compile of clk_gen.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of debouncer_timer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_debouncer.sv was successful.
+# Compile of testbench_debouncer_timer.sv was successful.
+# Compile of testbench_keypad.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# 18 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_clk_gen(fast)
+# Loading work.clk_gen(fast)
+# Loading iCE40UP.HSOSC(fast)
+run 1000000
+# Fail: test_clk = 1'b1. Expecting 1'b0.
+# Fail: test_clk = 1'b0. Expecting 1'b1.
+# Compile of clk_gen.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of debouncer_timer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_debouncer.sv was successful.
+# Compile of testbench_debouncer_timer.sv was successful.
+# Compile of testbench_keypad.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# 18 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_clk_gen(fast)
+# Loading work.clk_gen(fast)
+# Loading iCE40UP.HSOSC(fast)
+# ** Error (suppressible): (vsim-3009) [TSCALE] - Module 'testbench_clk_gen' does not have a timeunit/timeprecision specification in effect, but other modules do.
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_clk_gen/dut/hf_osc File: nofile
+run 1000000000
+# No Design Loaded!
+vsim -gui {-voptargs=+acc -L iCE40UP} work.testbench_clk_gen
+# vsim -gui -voptargs="+acc -L iCE40UP" work.testbench_clk_gen 
+# Start time: 00:44:46 on Sep 24,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=2.
+# Loading sv_std.std
+# Loading work.testbench_clk_gen(fast)
+# Loading work.clk_gen(fast)
+# Loading iCE40UP.HSOSC(fast)
+# ** Error (suppressible): (vsim-3009) [TSCALE] - Module 'testbench_clk_gen' does not have a timeunit/timeprecision specification in effect, but other modules do.
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_clk_gen/dut/hf_osc File: nofile
+# Error loading design
+# End time: 00:50:27 on Sep 24,2025, Elapsed time: 0:05:41
+# Errors: 2, Warnings: 3
+# Compile of clk_gen.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of debouncer_timer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_debouncer.sv was successful.
+# Compile of testbench_debouncer_timer.sv was successful.
+# Compile of testbench_keypad.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# 18 compiles, 0 failed with no errors.
+# Compile of clk_gen.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of debouncer_timer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_debouncer.sv was successful.
+# Compile of testbench_debouncer_timer.sv was successful.
+# Compile of testbench_keypad.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# 18 compiles, 0 failed with no errors.
+vsim -gui {-voptargs=+acc -L iCE40UP} work.testbench_clk_gen
+# vsim -gui -voptargs="+acc -L iCE40UP" work.testbench_clk_gen 
+# Start time: 00:51:18 on Sep 24,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_clk_gen(fast)
+# Loading work.clk_gen(fast)
+# Loading iCE40UP.HSOSC(fast)
+run 1000000000
+# Fail: test_clk = 1'b1. Expecting 1'b0.
+# Fail: test_clk = 1'b0. Expecting 1'b1.
+# Completed testbench for clk_gen.sv.
+# ** Note: $stop    : C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv(36)
+#    Time: 100020 ns  Iteration: 0  Instance: /testbench_clk_gen
+# Break in Module testbench_clk_gen at C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv line 36
+# Compile of clk_gen.sv failed with 1 errors.
+# Compile of debouncer.sv was successful.
+# Compile of debouncer_timer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_debouncer.sv was successful.
+# Compile of testbench_debouncer_timer.sv was successful.
+# Compile of testbench_keypad.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# 18 compiles, 1 failed with 1 error.
+# Compile of clk_gen.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of debouncer_timer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_debouncer.sv was successful.
+# Compile of testbench_debouncer_timer.sv was successful.
+# Compile of testbench_keypad.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# 18 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_clk_gen(fast)
+# Loading work.clk_gen(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Warning in wave window restart: (vish-4014) No objects found matching '/testbench_clk_gen/hsosc_clk'. 
+run 1000000000
+# Fail: test_clk = 1'b1. Expecting 1'b0.
+# Fail: test_clk = 1'b0. Expecting 1'b1.
+# Completed testbench for clk_gen.sv.
+# ** Note: $stop    : C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv(36)
+#    Time: 100020 ns  Iteration: 0  Instance: /testbench_clk_gen
+# Break in Module testbench_clk_gen at C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv line 36
+# Compile of clk_gen.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of debouncer_timer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_debouncer.sv was successful.
+# Compile of testbench_debouncer_timer.sv was successful.
+# Compile of testbench_keypad.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# 18 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_clk_gen(fast)
+# Loading work.clk_gen(fast)
+# Loading iCE40UP.HSOSC(fast)
+run 1000000000
+# Fail: test_clk = 1'b1. Expecting 1'b0.
+# Fail: test_clk = 1'b0. Expecting 1'b1.
+# Completed testbench for clk_gen.sv.
+# ** Note: $stop    : C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv(36)
+#    Time: 100020 ns  Iteration: 0  Instance: /testbench_clk_gen
+# Break in Module testbench_clk_gen at C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv line 36
+# Compile of clk_gen.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of debouncer_timer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv failed with 1 errors.
+# Compile of testbench_debouncer.sv was successful.
+# Compile of testbench_debouncer_timer.sv was successful.
+# Compile of testbench_keypad.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# 18 compiles, 1 failed with 1 error.
+# Compile of clk_gen.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of debouncer_timer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_debouncer.sv was successful.
+# Compile of testbench_debouncer_timer.sv was successful.
+# Compile of testbench_keypad.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# 18 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Error: C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv(14): (vopt-2135) Too many port connections. Expected 2, found 3.
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
+run 10000000
+# No Design Loaded!
+vsim -gui {-voptargs=+acc -L iCE40UP} work.testbench_clk_gen
+# vsim -gui -voptargs="+acc -L iCE40UP" work.testbench_clk_gen 
+# Start time: 00:51:18 on Sep 24,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Error: C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv(14): (vopt-2135) Too many port connections. Expected 2, found 3.
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=2.
+# Error loading design
+# End time: 01:03:12 on Sep 24,2025, Elapsed time: 0:11:54
+# Errors: 2, Warnings: 3
+# Compile of clk_gen.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of debouncer_timer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_debouncer.sv was successful.
+# Compile of testbench_debouncer_timer.sv was successful.
+# Compile of testbench_keypad.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# 18 compiles, 0 failed with no errors.
+vsim -gui {-voptargs=+acc -L iCE40UP} work.testbench_clk_gen
+# vsim -gui -voptargs="+acc -L iCE40UP" work.testbench_clk_gen 
+# Start time: 01:03:56 on Sep 24,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_clk_gen(fast)
+# Loading work.clk_gen(fast)
+# Loading iCE40UP.HSOSC(fast)
+add wave  \
+sim:/testbench_clk_gen/clk \
+sim:/testbench_clk_gen/reset \
+sim:/testbench_clk_gen/test_clk \
+sim:/testbench_clk_gen/hsosc_clk
+run 1000000000
+# Fail: test_clk = 1'b1. Expecting 1'b0.
+# Fail: test_clk = 1'b0. Expecting 1'b1.
+# Completed testbench for clk_gen.sv.
+# ** Note: $stop    : C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv(36)
+#    Time: 100020 ns  Iteration: 0  Instance: /testbench_clk_gen
+# Break in Module testbench_clk_gen at C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv line 36
+# Compile of clk_gen.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of debouncer_timer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_debouncer.sv was successful.
+# Compile of testbench_debouncer_timer.sv was successful.
+# Compile of testbench_keypad.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# 18 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_clk_gen(fast)
+# Loading work.clk_gen(fast)
+# Loading iCE40UP.HSOSC(fast)
+run 1000000000
+# Fail: test_clk = 1'b1. Expecting 1'b0.
+# Fail: test_clk = 1'b0. Expecting 1'b1.
+# Completed testbench for clk_gen.sv.
+# ** Note: $stop    : C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv(36)
+#    Time: 100020 ns  Iteration: 0  Instance: /testbench_clk_gen
+# Break in Module testbench_clk_gen at C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv line 36
+# Compile of clk_gen.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of debouncer_timer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_debouncer.sv was successful.
+# Compile of testbench_debouncer_timer.sv was successful.
+# Compile of testbench_keypad.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# 18 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_clk_gen(fast)
+# Loading work.clk_gen(fast)
+# Loading iCE40UP.HSOSC(fast)
+run 1000000000
+# Fail: test_clk = 1'b1. Expecting 1'b0.
+# Fail: test_clk = 1'b0. Expecting 1'b1.
+# Completed testbench for clk_gen.sv.
+# ** Note: $stop    : C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv(36)
+#    Time: 100020 ns  Iteration: 0  Instance: /testbench_clk_gen
+# Break in Module testbench_clk_gen at C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv line 36
+# Compile of clk_gen.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of debouncer_timer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_debouncer.sv was successful.
+# Compile of testbench_debouncer_timer.sv was successful.
+# Compile of testbench_keypad.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# 18 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_clk_gen(fast)
+# Loading work.clk_gen(fast)
+# Loading iCE40UP.HSOSC(fast)
+run 10000000
+# Fail: test_clk = 1'b1. Expecting 1'b0.
+# Fail: test_clk = 1'b0. Expecting 1'b1.
+# Compile of clk_gen.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of debouncer_timer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_debouncer.sv was successful.
+# Compile of testbench_debouncer_timer.sv was successful.
+# Compile of testbench_keypad.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# 18 compiles, 0 failed with no errors.
+# Load canceled
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_clk_gen(fast)
+# Loading work.clk_gen(fast)
+# Loading iCE40UP.HSOSC(fast)
+run 10000000
+# Fail: test_clk = 1'b1. Expecting 1'b0.
+# Fail: test_clk = 1'b0. Expecting 1'b1.
+# Compile of clk_gen.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of debouncer_timer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_debouncer.sv was successful.
+# Compile of testbench_debouncer_timer.sv was successful.
+# Compile of testbench_keypad.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# 18 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_clk_gen(fast)
+# Loading work.clk_gen(fast)
+# Loading iCE40UP.HSOSC(fast)
+run 100000
+# Fail: test_clk = 1'b1. Expecting 1'b0.
+# Fail: test_clk = 1'b0. Expecting 1'b1.
+run 10000000
+# Compile of clk_gen.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of debouncer_timer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_debouncer.sv was successful.
+# Compile of testbench_debouncer_timer.sv was successful.
+# Compile of testbench_keypad.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# 18 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_clk_gen(fast)
+# Loading work.clk_gen(fast)
+# Loading iCE40UP.HSOSC(fast)
+add wave  \
+sim:/testbench_clk_gen/clk \
+sim:/testbench_clk_gen/reset \
+sim:/testbench_clk_gen/test_clk \
+sim:/testbench_clk_gen/hsosc_clk \
+sim:/testbench_clk_gen/counter
+run 10000000
+# Fail: test_clk = 1'b1. Expecting 1'b0.
+# Fail: test_clk = 1'b0. Expecting 1'b1.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.testbench_clk_gen(fast)
+# Loading work.clk_gen(fast)
+# Loading iCE40UP.HSOSC(fast)
+run 1000000000000
+# Fail: test_clk = 1'b1. Expecting 1'b0.
+# Fail: test_clk = 1'b0. Expecting 1'b1.
+# Completed testbench for clk_gen.sv.
+# ** Note: $stop    : C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv(37)
+#    Time: 100020 ns  Iteration: 0  Instance: /testbench_clk_gen
+# Break in Module testbench_clk_gen at C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv line 37
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.testbench_clk_gen(fast)
+# Loading work.clk_gen(fast)
+# Loading iCE40UP.HSOSC(fast)
+run 100000000000000000000
+# Invalid time value: 100000000000000000000
+run 1000000000000000000
+# Fail: test_clk = 1'b1. Expecting 1'b0.
+# Fail: test_clk = 1'b0. Expecting 1'b1.
+# Completed testbench for clk_gen.sv.
+# ** Note: $stop    : C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv(37)
+#    Time: 100020 ns  Iteration: 0  Instance: /testbench_clk_gen
+# Break in Module testbench_clk_gen at C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv line 37
+# Compile of clk_gen.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of debouncer_timer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_debouncer.sv was successful.
+# Compile of testbench_debouncer_timer.sv was successful.
+# Compile of testbench_keypad.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# 18 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_clk_gen(fast)
+# Loading work.clk_gen(fast)
+# Loading iCE40UP.HSOSC(fast)
+run 1000000000000000
+# Fail: test_clk = 1'b1. Expecting 1'b0.
+# Fail: test_clk = 1'b0. Expecting 1'b1.
+# Completed testbench for clk_gen.sv.
+# ** Note: $stop    : C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv(37)
+#    Time: 100020 us  Iteration: 0  Instance: /testbench_clk_gen
+# Break in Module testbench_clk_gen at C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv line 37
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.testbench_clk_gen(fast)
+# Loading work.clk_gen(fast)
+# Loading iCE40UP.HSOSC(fast)
+run 10000000000000000
+# Fail: test_clk = 1'b1. Expecting 1'b0.
+# Fail: test_clk = 1'b0. Expecting 1'b1.
+# Completed testbench for clk_gen.sv.
+# ** Note: $stop    : C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv(37)
+#    Time: 100020 us  Iteration: 0  Instance: /testbench_clk_gen
+# Break in Module testbench_clk_gen at C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv line 37
+# Compile of clk_gen.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of debouncer_timer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_debouncer.sv was successful.
+# Compile of testbench_debouncer_timer.sv was successful.
+# Compile of testbench_keypad.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# 18 compiles, 0 failed with no errors.
+restart 0f
+restart -
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_clk_gen(fast)
+# Loading work.clk_gen(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Warning in wave window restart: (vish-4014) No objects found matching '/testbench_clk_gen/hsosc_clk'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/testbench_clk_gen/counter'. 
+run 10000000000000
+# Fail: test_clk = 1'b1. Expecting 1'b0.
+# Fail: test_clk = 1'b0. Expecting 1'b1.
+# Completed testbench for clk_gen.sv.
+# ** Note: $stop    : C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv(36)
+#    Time: 100020 us  Iteration: 0  Instance: /testbench_clk_gen
+# Break in Module testbench_clk_gen at C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv line 36
+vsim -gui {-voptargs=+acc -L iCE40UP} work.testbench_synchronizer
+# End time: 01:20:13 on Sep 24,2025, Elapsed time: 0:16:17
+# Errors: 0, Warnings: 2
+# vsim -gui -voptargs="+acc -L iCE40UP" work.testbench_synchronizer 
+# Start time: 01:20:13 on Sep 24,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_synchronizer(fast)
+# Loading work.synchronizer(fast)
+add wave  \
+sim:/testbench_synchronizer/clk \
+sim:/testbench_synchronizer/reset \
+sim:/testbench_synchronizer/async_col \
+sim:/testbench_synchronizer/sync_col \
+sim:/testbench_synchronizer/async_history \
+sim:/testbench_synchronizer/errors
+run 10000000000000
+# Fail: First cycle after async_col=1010. Output: sync_col=1010, expected=0000 at time 60000
+# Fail: First cycle after async_col=1100. Output: sync_col=1100, expected=1010 at time 100000
+# Fail: First cycle after async_col=0111. Output: sync_col=0111, expected=1100 at time 140000
+# Testbench completed with 3 errors.
+# ** Note: $stop    : C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_synchronizer.sv(78)
+#    Time: 180 ns  Iteration: 0  Instance: /testbench_synchronizer
+# Break in Module testbench_synchronizer at C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_synchronizer.sv line 78
+# Compile of clk_gen.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of debouncer_timer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv failed with 1 errors.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_debouncer.sv was successful.
+# Compile of testbench_debouncer_timer.sv was successful.
+# Compile of testbench_keypad.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# 18 compiles, 1 failed with 1 error.
+# Compile of clk_gen.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of debouncer_timer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv failed with 2 errors.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_debouncer.sv was successful.
+# Compile of testbench_debouncer_timer.sv was successful.
+# Compile of testbench_keypad.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# 18 compiles, 1 failed with 2 errors.
+# Compile of clk_gen.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of debouncer_timer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_debouncer.sv was successful.
+# Compile of testbench_debouncer_timer.sv was successful.
+# Compile of testbench_keypad.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# 18 compiles, 0 failed with no errors.
+vsim -gui {-voptargs=+acc -L iCE40UP} work.testbench_keypad
+# End time: 04:42:57 on Sep 24,2025, Elapsed time: 3:22:44
+# Errors: 0, Warnings: 5
+# vsim -gui -voptargs="+acc -L iCE40UP" work.testbench_keypad 
+# Start time: 04:42:57 on Sep 24,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vopt-143) Recognized 1 FSM in module "keypad(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_keypad(fast)
+# Loading work.keypad(fast)
+add wave  \
+sim:/testbench_keypad/clk \
+sim:/testbench_keypad/reset \
+sim:/testbench_keypad/row \
+sim:/testbench_keypad/col \
+sim:/testbench_keypad/keypad_val \
+sim:/testbench_keypad/key_onebit \
+sim:/testbench_keypad/keys
+run 10000000000000
+# PASSED!: No key pressed -- got keypad_val=1f key_onebit=0 expected keypad_val=1f key_onebit=0 at time 122.
+# ** Error: FAILED!: First key press (row=1,col=2) -- got keypad_val=1f key_onebit=0 expected keypad_val=06 key_onebit=1 at time 322.
+#    Time: 322 ns  Scope: testbench_keypad.check_key File: C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_keypad.sv Line: 52
+# PASSED!: Key released -- got keypad_val=1f key_onebit=0 expected keypad_val=1f key_onebit=0 at time 522.
+# ** Error: FAILED!: Second key press (row=2,col=3) -- got keypad_val=1f key_onebit=0 expected keypad_val=0c key_onebit=1 at time 722.
+#    Time: 722 ns  Scope: testbench_keypad.check_key File: C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_keypad.sv Line: 52
+# PASSED!: Key released -- got keypad_val=1f key_onebit=0 expected keypad_val=1f key_onebit=0 at time 922.
+# ** Error: FAILED!: Multiple keys pressed (should register first in priority) -- got keypad_val=1f key_onebit=0 expected keypad_val=01 key_onebit=1 at time 1122.
+#    Time: 1122 ns  Scope: testbench_keypad.check_key File: C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_keypad.sv Line: 52
+# PASSED!: All keys released -- got keypad_val=1f key_onebit=0 expected keypad_val=1f key_onebit=0 at time 1322.
+# Completed keypad testbench.
+# ** Note: $stop    : C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_keypad.sv(89)
+#    Time: 1472 ns  Iteration: 0  Instance: /testbench_keypad
+# Break in Module testbench_keypad at C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_keypad.sv line 89
+# Compile of clk_gen.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of debouncer_timer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_debouncer.sv was successful.
+# Compile of testbench_debouncer_timer.sv was successful.
+# Compile of testbench_keypad.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# 18 compiles, 0 failed with no errors.
+# Load canceled
+run 10000000000000
+# ** Error: Simulation did not complete in time.
+#    Time: 5 us  Scope: testbench_keypad File: C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_keypad.sv Line: 95
+# ** Note: $stop    : C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_keypad.sv(96)
+#    Time: 5 us  Iteration: 0  Instance: /testbench_keypad
+# Break in Module testbench_keypad at C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_keypad.sv line 96
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_keypad(fast)
+# Loading work.keypad(fast)
+run 10000000000000
+# PASSED!: No key pressed -- got keypad_val=11111 key_onebit=0 expected keypad_val=11111 key_onebit=0 at time 122.
+# ** Error: FAILED!: First key press (row=1,col=2) -- got keypad_val=11111 key_onebit=0 expected keypad_val=00110 key_onebit=1 at time 322.
+#    Time: 322 ns  Scope: testbench_keypad.check_key File: C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_keypad.sv Line: 52
+# PASSED!: Key released -- got keypad_val=11111 key_onebit=0 expected keypad_val=11111 key_onebit=0 at time 522.
+# ** Error: FAILED!: Second key press (row=2,col=3) -- got keypad_val=11111 key_onebit=0 expected keypad_val=01100 key_onebit=1 at time 722.
+#    Time: 722 ns  Scope: testbench_keypad.check_key File: C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_keypad.sv Line: 52
+# PASSED!: Key released -- got keypad_val=11111 key_onebit=0 expected keypad_val=11111 key_onebit=0 at time 922.
+# ** Error: FAILED!: Multiple keys pressed (should register first in priority) -- got keypad_val=11111 key_onebit=0 expected keypad_val=00001 key_onebit=1 at time 1122.
+#    Time: 1122 ns  Scope: testbench_keypad.check_key File: C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_keypad.sv Line: 52
+# PASSED!: All keys released -- got keypad_val=11111 key_onebit=0 expected keypad_val=11111 key_onebit=0 at time 1322.
+# Completed keypad testbench.
+# ** Note: $stop    : C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_keypad.sv(89)
+#    Time: 1472 ns  Iteration: 0  Instance: /testbench_keypad
+# Break in Module testbench_keypad at C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_keypad.sv line 89

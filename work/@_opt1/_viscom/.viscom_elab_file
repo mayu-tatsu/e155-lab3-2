@@ -1,0 +1,1 @@
+C:/lscc/radiant/2024.2/questasim/win64/VisualizerRls/bin/viscom.exe -nolock -quiet -jmem_size 393216 work.testbench_keypad(fast) -quiet -auto_acc_if_foreign -work work +acc -L iCE40UP -allow_unnamed -o _opt1 -id 2-00be43eaec33-68d3da74-c6-700 +__design_bin_path+C:/Users/mtatsumi/my_designs/test +__betafsm

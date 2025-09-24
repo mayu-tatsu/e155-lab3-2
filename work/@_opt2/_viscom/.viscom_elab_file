@@ -1,0 +1,1 @@
+C:/lscc/radiant/2024.2/questasim/win64/VisualizerRls/bin/viscom.exe -nolock -quiet -jmem_size 393216 work.testbench_synchronizer -quiet -auto_acc_if_foreign -work work +acc -L iCE40UP -allow_unnamed -o _opt2 -id 1-00be43eaec33-68d3a9bd-3aa-49b4 +__design_bin_path+C:/Users/mtatsumi/my_designs/test +__betafsm

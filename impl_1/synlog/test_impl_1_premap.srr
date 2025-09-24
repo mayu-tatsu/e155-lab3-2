@@ -1,0 +1,164 @@
+# Wed Sep 24 04:34:19 2025
+
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: V-2023.09LR-2
+Install: C:\lscc\radiant\2024.2\synpbase
+OS: Windows 10 or later
+Hostname: HGMZ0R3
+
+Implementation : impl_1
+Synopsys Lattice Technology Pre-mapping, Version map202309lat, Build 228R, Built Nov  4 2024 06:01:40, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 185MB peak: 185MB)
+
+
+Done reading skeleton netlist (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 189MB peak: 200MB)
+
+Reading constraint file: C:\lscc\radiant\2024.2\scripts\tcl\flow\radiant_synplify_vars.tcl
+@L: C:\Users\mtatsumi\my_designs\test\impl_1\test_impl_1_scck.rpt 
+See clock summary report "C:\Users\mtatsumi\my_designs\test\impl_1\test_impl_1_scck.rpt"
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 192MB peak: 200MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 192MB peak: 200MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 194MB peak: 200MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 194MB peak: 200MB)
+
+NConnInternalConnection caching is on
+
+Starting HSTDM IP insertion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 248MB peak: 248MB)
+
+
+Finished HSTDM IP insertion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 248MB peak: 248MB)
+
+
+Started DisTri Cleanup (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 248MB peak: 248MB)
+
+
+Finished DisTri Cleanup (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 248MB peak: 249MB)
+
+Encoding state machine state[19:0] (in view: work.keypad(verilog))
+original code -> new code
+   00000 -> 00000000000000000001
+   00001 -> 00000000000000000010
+   00010 -> 00000000000000000100
+   00011 -> 00000000000000001000
+   00100 -> 00000000000000010000
+   00101 -> 00000000000000100000
+   00110 -> 00000000000001000000
+   00111 -> 00000000000010000000
+   01000 -> 00000000000100000000
+   01001 -> 00000000001000000000
+   01010 -> 00000000010000000000
+   01011 -> 00000000100000000000
+   01100 -> 00000001000000000000
+   01101 -> 00000010000000000000
+   01110 -> 00000100000000000000
+   01111 -> 00001000000000000000
+   10000 -> 00010000000000000000
+   10001 -> 00100000000000000000
+   10010 -> 01000000000000000000
+   10011 -> 10000000000000000000
+Encoding state machine state[3:0] (in view: work.debouncer(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\users\mtatsumi\my_designs\test\source\impl_1\debouncer.sv":21:4:21:12|There are no possible illegal states for state machine state[3:0] (in view: work.debouncer(verilog)); safe FSM implementation is not required.
+
+Starting clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 254MB peak: 254MB)
+
+
+Finished clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 254MB peak: 254MB)
+
+@N: FX1184 |Applying syn_allowed_resources blockrams=30 on top level netlist lab3_mt 
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 254MB peak: 255MB)
+
+
+
+Clock Summary
+******************
+
+          Start                                   Requested     Requested     Clock                                               Clock          Clock
+Level     Clock                                   Frequency     Period        Type                                                Group          Load 
+------------------------------------------------------------------------------------------------------------------------------------------------------
+0 -       clk_gen|clk_48mhz_inferred_clock        200.0 MHz     5.000         inferred                                            (multiple)     23   
+1 .         clk_gen|clk_divided_derived_clock     200.0 MHz     5.000         derived (from clk_gen|clk_48mhz_inferred_clock)     (multiple)     40   
+======================================================================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                                      Clock     Source                                    Clock Pin                          Non-clock Pin     Non-clock Pin
+Clock                                 Load      Pin                                       Seq Example                        Seq Example       Comb Example 
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+clk_gen|clk_48mhz_inferred_clock      23        clk_generation.hf_osc.CLKHF(HSOSC)        clk_generation.counter[21:0].C     -                 -            
+clk_gen|clk_divided_derived_clock     40        clk_generation.clk_divided.Q[0](dffe)     selector.alternate_led.C           -                 -            
+============================================================================================================================================================
+
+@W: MT530 :"c:\users\mtatsumi\my_designs\test\source\impl_1\clk_gen.sv":23:1:23:9|Found inferred clock clk_gen|clk_48mhz_inferred_clock which controls 23 sequential elements including clk_generation.clk_divided. This clock has no specified timing constraint which may adversely impact design performance. 
+
+ICG Latch Removal Summary:
+Number of ICG latches removed: 0
+Number of ICG latches not removed:	0
+
+
+@S |Clock Optimization Summary
+
+
+
+#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
+
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+2 gated/generated clock tree(s) driving 63 clock pin(s) of sequential element(s)
+0 instances converted, 63 sequential instances remain driven by gated/generated clocks
+
+==================================================================== Gated/Generated Clocks =====================================================================
+Clock Tree ID     Driving Element                     Drive Element Type     Unconverted Fanout     Sample Instance                Explanation                   
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_5       clk_generation.clk_divided.Q[0]     dffe                   40                     sync.temp_col[3:0]             Clock Optimization not enabled
+@KP:ckid0_6       clk_generation.hf_osc.CLKHF         HSOSC                  23                     clk_generation.clk_divided     Clock Optimization not enabled
+=================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\Users\mtatsumi\my_designs\test\impl_1\test_impl_1.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 255MB peak: 255MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 255MB peak: 256MB)
+
+
+Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 256MB peak: 256MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 168MB peak: 256MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Sep 24 04:34:20 2025
+
+###########################################################]

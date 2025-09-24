@@ -1,0 +1,2 @@
+@W: MT246 :"c:\users\mtatsumi\my_designs\test\source\impl_1\clk_gen.sv":15:29:15:34|Blackbox HSOSC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT420 |Found inferred clock clk_gen|clk_48mhz_inferred_clock with period 5.00ns. Please declare a user-defined clock on net clk_generation.clk_48mhz.

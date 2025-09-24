@@ -1,0 +1,27 @@
+###########################################################[
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: V-2023.09LR-2
+Install: C:\lscc\radiant\2024.2\synpbase
+OS: Windows 10 or later
+Hostname: HGMZ0R3
+
+Implementation : impl_1
+Synopsys Synopsys Netlist Linker, Version comp202309synp1, Build 364R, Built Oct  3 2024 00:23:20, @
+
+@N|Running in 64-bit mode
+File C:\Users\mtatsumi\my_designs\test\impl_1\synwork\test_impl_1_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 92MB peak: 92MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Wed Sep 24 04:34:19 2025
+
+###########################################################]

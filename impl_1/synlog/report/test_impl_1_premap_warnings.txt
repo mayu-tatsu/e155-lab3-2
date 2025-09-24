@@ -1,0 +1,1 @@
+@W: MT530 :"c:\users\mtatsumi\my_designs\test\source\impl_1\clk_gen.sv":23:1:23:9|Found inferred clock clk_gen|clk_48mhz_inferred_clock which controls 23 sequential elements including clk_generation.clk_divided. This clock has no specified timing constraint which may adversely impact design performance. 

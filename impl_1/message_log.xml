@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Synthesis">
+        <Message>
+            <ID>2012910</ID>
+            <Severity>16</Severity>
+            <Dynamic>CL247 :&quot;C:\Users\mtatsumi\my_designs\test\source\impl_1\keypad_storage.sv&quot;:11:23:11:32|Input port bit 4 of keypad_val[4:0] is unused</Dynamic>
+            <Navigation>CL247</Navigation>
+            <Navigation>C:\Users\mtatsumi\my_designs\test\source\impl_1\keypad_storage.sv</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>32</Navigation>
+            <Navigation>Input port bit 4 of keypad_val[4:0] is unused</Navigation>
+        </Message>
+        <Message>
+            <ID>2012918</ID>
+            <Severity>16</Severity>
+            <Dynamic>CL279 :&quot;C:\Users\mtatsumi\my_designs\test\source\impl_1\clk_gen.sv&quot;:23:1:23:9|Pruning register bits 31 to 22 of counter[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>C:\Users\mtatsumi\my_designs\test\source\impl_1\clk_gen.sv</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Pruning register bits 31 to 22 of counter[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2013202</ID>
+            <Severity>16</Severity>
+            <Dynamic>MT530 :&quot;c:\users\mtatsumi\my_designs\test\source\impl_1\clk_gen.sv&quot;:23:1:23:9|Found inferred clock clk_gen|clk_48mhz_inferred_clock which controls 23 sequential elements including clk_generation.clk_divided. This clock has no specified timing constraint which may adversely impact design performance.</Dynamic>
+            <Navigation>MT530</Navigation>
+            <Navigation>c:\users\mtatsumi\my_designs\test\source\impl_1\clk_gen.sv</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Found inferred clock clk_gen|clk_48mhz_inferred_clock which controls 23 sequential elements including clk_generation.clk_divided. This clock has no specified timing constraint which may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2013182</ID>
+            <Severity>16</Severity>
+            <Dynamic>MT246 :&quot;c:\users\mtatsumi\my_designs\test\source\impl_1\clk_gen.sv&quot;:15:29:15:34|Blackbox HSOSC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
+            <Navigation>MT246</Navigation>
+            <Navigation>c:\users\mtatsumi\my_designs\test\source\impl_1\clk_gen.sv</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>29</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>34</Navigation>
+            <Navigation>Blackbox HSOSC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Navigation>
+        </Message>
+        <Message>
+            <ID>2013187</ID>
+            <Severity>16</Severity>
+            <Dynamic>MT420 |Found inferred clock clk_gen|clk_48mhz_inferred_clock with period 5.00ns. Please declare a user-defined clock on net clk_generation.clk_48mhz.</Dynamic>
+            <Navigation>MT420</Navigation>
+            <Navigation>Found inferred clock clk_gen|clk_48mhz_inferred_clock with period 5.00ns. Please declare a user-defined clock on net clk_generation.clk_48mhz.</Navigation>
+        </Message>
+        <Message>
+            <ID>35811146</ID>
+            <Severity>1</Severity>
+            <Dynamic>clk_generation/un1_counter_cry_1_c_0.CIN</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Export">
+        <Message>
+            <ID>1081100</ID>
+            <Severity>1</Severity>
+            <Dynamic>Bitstream authenticated.</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

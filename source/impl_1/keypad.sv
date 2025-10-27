@@ -1,4 +1,132 @@
-// keypad.sv
+//============================================================
+// 4-State Keypad Decoder FSM
+// Scans a 4x4 keypad and outputs:
+//   - key_onebit: 1 when any key is pressed
+//   - keypad_val: binary code (0–15) of pressed key, or 11111 when none
+//   - row[3:0]: drives keypad rows for scanning
+//============================================================
+
+module keypad_decoder (
+    input  logic       clk,
+    input  logic       reset,
+    input  logic [3:0] col,          // from keypad columns (after sync)
+    output logic [3:0] row,          // to keypad rows
+    output logic [4:0] keypad_val,   // 5'b11111 = none
+    output logic       key_onebit    // 1 when key is pressed
+);
+
+    // --- FSM State Encoding ---
+    typedef enum logic [1:0] {
+        ROW0 = 2'b00,
+        ROW1 = 2'b01,
+        ROW2 = 2'b10,
+        ROW3 = 2'b11
+    } state_t;
+
+    state_t state, next_state;
+
+    // --- Internal variables ---
+    logic [3:0] row_drive;
+    logic [4:0] key_val_next;
+    logic       key_detect;
+
+    //------------------------------------------------------------
+    // State Register
+    //------------------------------------------------------------
+    always_ff @(posedge clk or posedge reset) begin
+        if (reset)
+            state <= ROW0;
+        else
+            state <= next_state;
+    end
+
+    //------------------------------------------------------------
+    // Row Drive Logic (each row active low or high depending on wiring)
+    //------------------------------------------------------------
+    always_comb begin
+        // Default: drive only one row active at a time
+        case (state)
+            ROW0: row_drive = 4'b0001;
+            ROW1: row_drive = 4'b0010;
+            ROW2: row_drive = 4'b0100;
+            ROW3: row_drive = 4'b1000;
+            default: row_drive = 4'b0001;
+        endcase
+    end
+
+    assign row = row_drive;
+
+    //------------------------------------------------------------
+    // Next-State Logic
+    // - Keeps cycling through rows
+    // - If key detected, stays in current row until release
+    //------------------------------------------------------------
+    always_comb begin
+        next_state = state;  // default stay
+        if (!key_detect) begin
+            // Move to next row every clock if no key pressed
+            case (state)
+                ROW0: next_state = ROW1;
+                ROW1: next_state = ROW2;
+                ROW2: next_state = ROW3;
+                ROW3: next_state = ROW0;
+            endcase
+        end
+    end
+
+    //------------------------------------------------------------
+    // Key Detection + Encoding
+    //------------------------------------------------------------
+    always_comb begin
+        key_detect   = |col;        // any column high = pressed
+        key_val_next = 5'b11111;    // default (no key)
+
+        if (key_detect) begin
+            case (state)
+                ROW0: case (col)
+                    4'b0001: key_val_next = 5'd0;
+                    4'b0010: key_val_next = 5'd1;
+                    4'b0100: key_val_next = 5'd2;
+                    4'b1000: key_val_next = 5'd3;
+                endcase
+                ROW1: case (col)
+                    4'b0001: key_val_next = 5'd4;
+                    4'b0010: key_val_next = 5'd5;
+                    4'b0100: key_val_next = 5'd6;
+                    4'b1000: key_val_next = 5'd7;
+                endcase
+                ROW2: case (col)
+                    4'b0001: key_val_next = 5'd8;
+                    4'b0010: key_val_next = 5'd9;
+                    4'b0100: key_val_next = 5'd10;
+                    4'b1000: key_val_next = 5'd11;
+                endcase
+                ROW3: case (col)
+                    4'b0001: key_val_next = 5'd12;
+                    4'b0010: key_val_next = 5'd13;
+                    4'b0100: key_val_next = 5'd14;
+                    4'b1000: key_val_next = 5'd15;
+                endcase
+            endcase
+        end
+    end
+
+    //------------------------------------------------------------
+    // Output Registers (1-cycle latency)
+    //------------------------------------------------------------
+    always_ff @(posedge clk or posedge reset) begin
+        if (reset) begin
+            keypad_val <= 5'b11111;
+            key_onebit <= 1'b0;
+        end else begin
+            keypad_val <= key_val_next;
+            key_onebit <= key_detect;
+        end
+    end
+
+endmodule
+
+/*// keypad.sv
 // Mayu Tatsumi; mtatsumi@g.hmc.edu
 // 2025-09-22
 
@@ -120,4 +248,4 @@ module keypad(
     // high whenever any key is pressed (anything other than the not-pressed value)
     // used for debouncing
     assign key_onebit = (keypad_val != 5'b11111);
-endmodule
+endmodule*/

@@ -1,99 +1,53 @@
-@N: CG364 :"C:\lscc\radiant\2024.2\synpbase\lib\generic\ice40up.v":795:7:795:11|Synthesizing module HSOSC in library work.
+@N: CG364 :"C:\lscc\radiant\2025.1\synpbase\lib\generic\ice40up.v":795:7:795:11|Synthesizing module HSOSC in library work.
 Running optimization stage 1 on HSOSC .......
-Finished optimization stage 1 on HSOSC (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 114MB)
-@N: CG364 :"C:\Users\mtatsumi\my_designs\test\source\impl_1\clk_gen.sv":10:7:10:13|Synthesizing module clk_gen in library work.
+Finished optimization stage 1 on HSOSC (CPU Time 0h:00m:00s, Memory Used current: 177MB peak: 178MB)
+@N: CG364 :"C:\Users\mayut\source\e155\e155-lab3-2\source\impl_1\clk_gen.sv":10:7:10:13|Synthesizing module clk_gen in library work.
 Running optimization stage 1 on clk_gen .......
-Finished optimization stage 1 on clk_gen (CPU Time 0h:00m:00s, Memory Used current: 114MB peak: 115MB)
-@N: CG364 :"C:\Users\mtatsumi\my_designs\test\source\impl_1\synchronizer.sv":9:7:9:18|Synthesizing module synchronizer in library work.
+Finished optimization stage 1 on clk_gen (CPU Time 0h:00m:00s, Memory Used current: 178MB peak: 179MB)
+@N: CG364 :"C:\Users\mayut\source\e155\e155-lab3-2\source\impl_1\synchronizer.sv":9:7:9:18|Synthesizing module synchronizer in library work.
 Running optimization stage 1 on synchronizer .......
-Finished optimization stage 1 on synchronizer (CPU Time 0h:00m:00s, Memory Used current: 114MB peak: 115MB)
-@N: CG364 :"C:\Users\mtatsumi\my_designs\test\source\impl_1\keypad.sv":12:7:12:12|Synthesizing module keypad in library work.
-Running optimization stage 1 on keypad .......
-Finished optimization stage 1 on keypad (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
-@N: CG364 :"C:\Users\mtatsumi\my_designs\test\source\impl_1\debouncer_timer.sv":8:7:8:21|Synthesizing module debouncer_timer in library work.
+Finished optimization stage 1 on synchronizer (CPU Time 0h:00m:00s, Memory Used current: 178MB peak: 179MB)
+@W: CG309 :"C:\Users\mayut\source\e155\e155-lab3-2\source\impl_1\synchronizer.sv":17:4:17:12|Could not find module with name keypad, performing a case compare ...
+
+@W: CG311 :"C:\Users\mayut\source\e155\e155-lab3-2\source\impl_1\synchronizer.sv":17:4:17:12|Module with name keypad could not be found even with a case compare
+
+@N: CG364 :"C:\Users\mayut\source\e155\e155-lab3-2\source\impl_1\debouncer_timer.sv":8:7:8:21|Synthesizing module debouncer_timer in library work.
 Running optimization stage 1 on debouncer_timer .......
-Finished optimization stage 1 on debouncer_timer (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
-@N: CG364 :"C:\Users\mtatsumi\my_designs\test\source\impl_1\debouncer.sv":10:7:10:15|Synthesizing module debouncer in library work.
+Finished optimization stage 1 on debouncer_timer (CPU Time 0h:00m:00s, Memory Used current: 178MB peak: 179MB)
+@N: CG364 :"C:\Users\mayut\source\e155\e155-lab3-2\source\impl_1\debouncer.sv":10:7:10:15|Synthesizing module debouncer in library work.
 Running optimization stage 1 on debouncer .......
-Finished optimization stage 1 on debouncer (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
-@N: CG364 :"C:\Users\mtatsumi\my_designs\test\source\impl_1\keypad_storage.sv":9:7:9:20|Synthesizing module keypad_storage in library work.
+Finished optimization stage 1 on debouncer (CPU Time 0h:00m:00s, Memory Used current: 178MB peak: 179MB)
+@N: CG364 :"C:\Users\mayut\source\e155\e155-lab3-2\source\impl_1\keypad_storage.sv":9:7:9:20|Synthesizing module keypad_storage in library work.
 Running optimization stage 1 on keypad_storage .......
-Finished optimization stage 1 on keypad_storage (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
-@N: CG364 :"C:\Users\mtatsumi\my_designs\test\source\impl_1\sev_seg_sel.sv":14:7:14:17|Synthesizing module sev_seg_sel in library work.
+Finished optimization stage 1 on keypad_storage (CPU Time 0h:00m:00s, Memory Used current: 178MB peak: 179MB)
+@N: CG364 :"C:\Users\mayut\source\e155\e155-lab3-2\source\impl_1\sev_seg_sel.sv":14:7:14:17|Synthesizing module sev_seg_sel in library work.
 Running optimization stage 1 on sev_seg_sel .......
-Finished optimization stage 1 on sev_seg_sel (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
-@N: CG364 :"C:\Users\mtatsumi\my_designs\test\source\impl_1\sev_seg.sv":10:7:10:13|Synthesizing module sev_seg in library work.
+Finished optimization stage 1 on sev_seg_sel (CPU Time 0h:00m:00s, Memory Used current: 178MB peak: 179MB)
+@N: CG364 :"C:\Users\mayut\source\e155\e155-lab3-2\source\impl_1\sev_seg.sv":10:7:10:13|Synthesizing module sev_seg in library work.
 Running optimization stage 1 on sev_seg .......
-Finished optimization stage 1 on sev_seg (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
-@N: CG364 :"C:\Users\mtatsumi\my_designs\test\source\impl_1\lab3_mt.sv":8:7:8:13|Synthesizing module lab3_mt in library work.
-Running optimization stage 1 on lab3_mt .......
-Finished optimization stage 1 on lab3_mt (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
-Running optimization stage 2 on lab3_mt .......
-Finished optimization stage 2 on lab3_mt (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
-Running optimization stage 2 on sev_seg .......
-Finished optimization stage 2 on sev_seg (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 116MB)
-Running optimization stage 2 on sev_seg_sel .......
-Finished optimization stage 2 on sev_seg_sel (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 116MB)
-Running optimization stage 2 on keypad_storage .......
-@W: CL247 :"C:\Users\mtatsumi\my_designs\test\source\impl_1\keypad_storage.sv":11:23:11:32|Input port bit 4 of keypad_val[4:0] is unused
+Finished optimization stage 1 on sev_seg (CPU Time 0h:00m:00s, Memory Used current: 178MB peak: 179MB)
+@N: CG364 :"C:\Users\mayut\source\e155\e155-lab3-2\source\impl_1\lab3_mt.sv":8:7:8:13|Synthesizing module lab3_mt in library work.
+@W: CG309 :"C:\Users\mayut\source\e155\e155-lab3-2\source\impl_1\lab3_mt.sv":23:16:23:27|Could not find module with name keypad, performing a case compare ...
 
-Finished optimization stage 2 on keypad_storage (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 116MB)
-Running optimization stage 2 on debouncer .......
-@N: CL201 :"C:\Users\mtatsumi\my_designs\test\source\impl_1\debouncer.sv":21:4:21:12|Trying to extract state machine for register state.
-Extracted state machine for register state
-State machine has 4 reachable states with original encodings of:
-   00
-   01
-   10
-   11
-Finished optimization stage 2 on debouncer (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 116MB)
-Running optimization stage 2 on debouncer_timer .......
-Finished optimization stage 2 on debouncer_timer (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 116MB)
-Running optimization stage 2 on keypad .......
-@N: CL201 :"C:\Users\mtatsumi\my_designs\test\source\impl_1\keypad.sv":30:4:30:12|Trying to extract state machine for register state.
-Extracted state machine for register state
-State machine has 20 reachable states with original encodings of:
-   00000
-   00001
-   00010
-   00011
-   00100
-   00101
-   00110
-   00111
-   01000
-   01001
-   01010
-   01011
-   01100
-   01101
-   01110
-   01111
-   10000
-   10001
-   10010
-   10011
-Finished optimization stage 2 on keypad (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 116MB)
-Running optimization stage 2 on synchronizer .......
-Finished optimization stage 2 on synchronizer (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 116MB)
-Running optimization stage 2 on clk_gen .......
-@N: CL189 :"C:\Users\mtatsumi\my_designs\test\source\impl_1\clk_gen.sv":23:1:23:9|Register bit counter[22] is always 0.
-@N: CL189 :"C:\Users\mtatsumi\my_designs\test\source\impl_1\clk_gen.sv":23:1:23:9|Register bit counter[23] is always 0.
-@N: CL189 :"C:\Users\mtatsumi\my_designs\test\source\impl_1\clk_gen.sv":23:1:23:9|Register bit counter[24] is always 0.
-@N: CL189 :"C:\Users\mtatsumi\my_designs\test\source\impl_1\clk_gen.sv":23:1:23:9|Register bit counter[25] is always 0.
-@N: CL189 :"C:\Users\mtatsumi\my_designs\test\source\impl_1\clk_gen.sv":23:1:23:9|Register bit counter[26] is always 0.
-@N: CL189 :"C:\Users\mtatsumi\my_designs\test\source\impl_1\clk_gen.sv":23:1:23:9|Register bit counter[27] is always 0.
-@N: CL189 :"C:\Users\mtatsumi\my_designs\test\source\impl_1\clk_gen.sv":23:1:23:9|Register bit counter[28] is always 0.
-@N: CL189 :"C:\Users\mtatsumi\my_designs\test\source\impl_1\clk_gen.sv":23:1:23:9|Register bit counter[29] is always 0.
-@N: CL189 :"C:\Users\mtatsumi\my_designs\test\source\impl_1\clk_gen.sv":23:1:23:9|Register bit counter[30] is always 0.
-@N: CL189 :"C:\Users\mtatsumi\my_designs\test\source\impl_1\clk_gen.sv":23:1:23:9|Register bit counter[31] is always 0.
-@W: CL279 :"C:\Users\mtatsumi\my_designs\test\source\impl_1\clk_gen.sv":23:1:23:9|Pruning register bits 31 to 22 of counter[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-Finished optimization stage 2 on clk_gen (CPU Time 0h:00m:00s, Memory Used current: 116MB peak: 116MB)
-Running optimization stage 2 on HSOSC .......
-Finished optimization stage 2 on HSOSC (CPU Time 0h:00m:00s, Memory Used current: 116MB peak: 116MB)
+@W: CG311 :"C:\Users\mayut\source\e155\e155-lab3-2\source\impl_1\lab3_mt.sv":23:16:23:27|Module with name keypad could not be found even with a case compare
 
-For a summary of runtime per design unit, please see file:
-==========================================================
-@L: C:\Users\mtatsumi\my_designs\test\impl_1\synwork\layer0.duruntime
+@W: CG309 :"C:\Users\mayut\source\e155\e155-lab3-2\source\impl_1\lab3_mt.sv":23:16:23:27|Could not find module with name keypad, performing a case compare ...
 
+@W: CG311 :"C:\Users\mayut\source\e155\e155-lab3-2\source\impl_1\lab3_mt.sv":23:16:23:27|Module with name keypad could not be found even with a case compare
 
+@W: CG309 :"C:\Users\mayut\source\e155\e155-lab3-2\source\impl_1\lab3_mt.sv":23:16:23:27|Could not find module with name keypad, performing a case compare ...
+
+@W: CG311 :"C:\Users\mayut\source\e155\e155-lab3-2\source\impl_1\lab3_mt.sv":23:16:23:27|Module with name keypad could not be found even with a case compare
+
+@W: CG309 :"C:\Users\mayut\source\e155\e155-lab3-2\source\impl_1\lab3_mt.sv":23:16:23:27|Could not find module with name keypad, performing a case compare ...
+
+@W: CG311 :"C:\Users\mayut\source\e155\e155-lab3-2\source\impl_1\lab3_mt.sv":23:16:23:27|Module with name keypad could not be found even with a case compare
+
+@W: CG141 :"C:\Users\mayut\source\e155\e155-lab3-2\source\impl_1\lab3_mt.sv":23:16:23:27|Creating black box for keypad
+Making port _P0 a bidir
+Making port _P1 a bidir
+Making port _P2 a bidir
+Making port _P3 a bidir
+Making port _P4 a bidir
+Making port _P5 a bidir
+@E: CG389 :"C:\Users\mayut\source\e155\e155-lab3-2\source\impl_1\lab3_mt.sv":23:16:23:27|Reference to undefined module keypad

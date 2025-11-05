@@ -9,8 +9,6 @@
 // toggle, but both displays use the same output pins. Has a
 // clk divider to slow down clk from 6 MHz to 100 Hz.
 
-// Note: Using posedge & negedge doesn't work
-
 module sev_seg_sel(
     input  logic       clk, reset,
     input  logic [3:0] onboard_sw, bboard_sw,
@@ -39,5 +37,5 @@ module sev_seg_sel(
             sw = bboard_sw;
         end
     end
-    
+
 endmodule

@@ -45,21 +45,21 @@ set_option -rw_check_on_ram 0
 
 set_option -dup false
 set_option -disable_io_insertion false
-add_file -constraint {C:/lscc/radiant/2024.2/scripts/tcl/flow/radiant_synplify_vars.tcl}
-add_file -verilog {C:/lscc/radiant/2024.2/ip/pmi/pmi_iCE40UP.v}
-add_file -vhdl -lib pmi {C:/lscc/radiant/2024.2/ip/pmi/pmi_iCE40UP.vhd}
-add_file -verilog -vlog_std sysv {C:/Users/mtatsumi/my_designs/test/source/impl_1/debouncer.sv}
-add_file -verilog -vlog_std sysv {C:/Users/mtatsumi/my_designs/test/source/impl_1/clk_gen.sv}
-add_file -verilog -vlog_std sysv {C:/Users/mtatsumi/my_designs/test/source/impl_1/debouncer_timer.sv}
-add_file -verilog -vlog_std sysv {C:/Users/mtatsumi/my_designs/test/source/impl_1/keypad.sv}
-add_file -verilog -vlog_std sysv {C:/Users/mtatsumi/my_designs/test/source/impl_1/keypad_storage.sv}
-add_file -verilog -vlog_std sysv {C:/Users/mtatsumi/my_designs/test/source/impl_1/lab3_mt.sv}
-add_file -verilog -vlog_std sysv {C:/Users/mtatsumi/my_designs/test/source/impl_1/sev_seg.sv}
-add_file -verilog -vlog_std sysv {C:/Users/mtatsumi/my_designs/test/source/impl_1/sev_seg_sel.sv}
-add_file -verilog -vlog_std sysv {C:/Users/mtatsumi/my_designs/test/source/impl_1/synchronizer.sv}
+add_file -constraint {C:/lscc/radiant/2025.1/scripts/tcl/flow/radiant_synplify_vars.tcl}
+add_file -verilog {C:/lscc/radiant/2025.1/ip/pmi/pmi_iCE40UP.v}
+add_file -vhdl -lib pmi {C:/lscc/radiant/2025.1/ip/pmi/pmi_iCE40UP.vhd}
+add_file -verilog -vlog_std sysv {C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/debouncer.sv}
+add_file -verilog -vlog_std sysv {C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/clk_gen.sv}
+add_file -verilog -vlog_std sysv {C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/debouncer_timer.sv}
+add_file -verilog -vlog_std sysv {C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/keypad.sv}
+add_file -verilog -vlog_std sysv {C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/keypad_storage.sv}
+add_file -verilog -vlog_std sysv {C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/lab3_mt.sv}
+add_file -verilog -vlog_std sysv {C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/sev_seg.sv}
+add_file -verilog -vlog_std sysv {C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/sev_seg_sel.sv}
+add_file -verilog -vlog_std sysv {C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/synchronizer.sv}
 #-- top module name
 set_option -top_module lab3_mt
-set_option -include_path {C:/Users/mtatsumi/my_designs/test}
+set_option -include_path {C:/Users/mayut/source/e155/e155-lab3-2}
 
 #-- set result format/file last
 project -result_format "vm"

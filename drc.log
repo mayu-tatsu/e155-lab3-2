@@ -1,3 +1,17 @@
-DRC: Design Rule Check Radiant Software (64-bit) 2024.2.0.3.0
-Wed Sep 24 04:37:16 2025
+DRC: Design Rule Check Radiant Software (64-bit) 2025.1.0.39.0
+Wed Nov  5 05:21:09 2025
 
+WARNING <1027013> - No port matched 'async_col[0]'.
+WARNING <1026001> - C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (1) : Can't resolve object 'async_col[0]' in constraint 'ldc_set_port -iobuf {PULLMODE=NA} [get_ports {async_col[0]}]'.
+WARNING <1027013> - No port matched 'async_col[1]'.
+WARNING <1026001> - C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (2) : Can't resolve object 'async_col[1]' in constraint 'ldc_set_port -iobuf {PULLMODE=NA} [get_ports {async_col[1]}]'.
+WARNING <1027013> - No port matched 'async_col[2]'.
+WARNING <1026001> - C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (3) : Can't resolve object 'async_col[2]' in constraint 'ldc_set_port -iobuf {PULLMODE=NA} [get_ports {async_col[2]}]'.
+WARNING <1027013> - No port matched 'async_col[3]'.
+WARNING <1026001> - C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (4) : Can't resolve object 'async_col[3]' in constraint 'ldc_set_port -iobuf {PULLMODE=NA} [get_ports {async_col[3]}]'.
+WARNING <1027013> - No port matched 'sync_col[0]'.
+WARNING <1026001> - C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (5) : Can't resolve object 'sync_col[0]' in constraint 'ldc_set_location -site {28} [get_ports {sync_col[0]}]'.
+WARNING <1027013> - No port matched 'sync_col[1]'.
+WARNING <1026001> - C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (6) : Can't resolve object 'sync_col[1]' in constraint 'ldc_set_location -site {38} [get_ports {sync_col[1]}]'.
+WARNING <1027013> - No port matched 'sync_col[2]'.
+WARNING <1026001> - C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (7) : Can't resolve object 'sync_col[2]' in constraint 'ldc_set_location -site {42} [get_ports {sync_col[2]}]'.

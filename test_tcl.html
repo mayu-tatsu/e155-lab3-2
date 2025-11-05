@@ -1,8 +1,8 @@
 <HTML>
 <HEAD>
 <TITLE>Lattice TCL Log</TITLE>
-<link href="file:///C:/lscc/radiant/2024.2/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
-<link href="file:///C:/lscc/radiant/2024.2/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<link href="file:///C:/lscc/radiant/2025.1/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///C:/lscc/radiant/2025.1/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
 <style type="text/css">
 #toc {
   position: fixed;
@@ -40,165 +40,204 @@ if (a)
 <BODY>
 
 <DIV id="content" onclick="hideTocList()"><PRE>
-<A name="pn250923222830"></A><B><U><big>pn250923222830</big></U></B>
-#Start recording tcl command: 9/23/2025 21:12:04
-#Project Location: C:/Users/mayut/source/e155/test; Project name: test
-prj_create -name "test" -impl "impl_1" -dev iCE40UP5K-SG48I -performance "High-Performance_1.2V" -synthesis "lse"
-prj_save 
-prj_add_source "C:/Users/mayut/source/e155/test/source/impl_1/debouncer.sv"
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_add_source "C:/Users/mayut/source/e155/test/source/impl_1/clk_gen.sv"
-prj_add_source "C:/Users/mayut/source/e155/test/source/impl_1/debouncer_timer.ldc"
-prj_remove_source "C:/Users/mayut/source/e155/test/source/impl_1/debouncer_timer.ldc"
-prj_add_source "C:/Users/mayut/source/e155/test/source/impl_1/debouncer_timer.sv"
-prj_add_source "C:/Users/mayut/source/e155/test/source/impl_1/keypad.sv"
-prj_add_source "C:/Users/mayut/source/e155/test/source/impl_1/keypad_storage.sv"
-prj_add_source "C:/Users/mayut/source/e155/test/source/impl_1/lab3_mt.sv"
-prj_add_source "C:/Users/mayut/source/e155/test/source/impl_1/sev_seg.sv"
-prj_add_source "C:/Users/mayut/source/e155/test/source/impl_1/sev_seg_sel.vm"
-prj_remove_source "C:/Users/mayut/source/e155/test/source/impl_1/sev_seg_sel.vm"
-prj_add_source "C:/Users/mayut/source/e155/test/source/impl_1/sev_seg_sel.sv"
-prj_add_source "C:/Users/mayut/source/e155/test/source/impl_1/synchronizer.sv"
-prj_set_impl_opt -impl "impl_1" {top} {lab3_mt}
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run Synthesis -impl impl_1
-prj_run PAR -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run Export -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run PAR -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run PAR -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-#Stop recording: 9/23/2025 22:28:30
+<A name="pn251028173326"></A><B><U><big>pn251028173326</big></U></B>
+#Start recording tcl command: 10/28/2025 16:57:42
+#Project Location: C:/Users/mayut/source/e155/e155-lab3-2; Project name: test
+prj_open "C:/Users/mayut/source/e155/e155-lab3-2/test.rdf"
+#Stop recording: 10/28/2025 17:33:26
 
 
 
-<A name="pn250924001653"></A><B><U><big>pn250924001653</big></U></B>
-#Start recording tcl command: 9/23/2025 23:22:40
-#Project Location: C:/Users/mtatsumi/my_designs/test; Project name: test
-prj_open "C:/Users/mtatsumi/my_designs/test/test.rdf"
-prj_run PAR -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run Export -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run PAR -impl impl_1
-prj_run PAR -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run Synthesis -impl impl_1
-prj_run Synthesis -impl impl_1
-prj_run Synthesis -impl impl_1
-prj_set_impl_opt synthesis "synplify"
-prj_run Synthesis -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run PAR -impl impl_1
-prj_set_impl_opt synthesis "lse"
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_set_impl_opt synthesis "synplify"
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_add_source "C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv"
-prj_disable_source "C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_clk_gen.sv"
-prj_add_source "C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_debouncer.vm"
-prj_add_source "C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_debouncer_timer.sv"
-prj_add_source "C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_keypad.ldc"
-prj_save 
+<A name="pn251028173603"></A><B><U><big>pn251028173603</big></U></B>
+#Start recording tcl command: 10/28/2025 17:34:02
+#Project Location: C:/Users/mayut/source/e155/e155-lab3-2; Project name: test
+prj_open "C:/Users/mayut/source/e155/e155-lab3-2/test.rdf"
+#Stop recording: 10/28/2025 17:36:03
+
+
+
+<A name="pn251028174142"></A><B><U><big>pn251028174142</big></U></B>
+#Start recording tcl command: 10/28/2025 17:38:19
+#Project Location: C:/Users/mayut/source/e155/e155-lab3-2; Project name: test
+prj_open "C:/Users/mayut/source/e155/e155-lab3-2/test.rdf"
+#Stop recording: 10/28/2025 17:41:42
+
+
+
+<A name="pn251028180007"></A><B><U><big>pn251028180007</big></U></B>
+#Start recording tcl command: 10/28/2025 17:57:45
+#Project Location: C:/Users/mayut/source/e155/e155-lab3-2; Project name: test
+prj_open "C:/Users/mayut/source/e155/e155-lab3-2/test.rdf"
 prj_close
-#Stop recording: 9/24/2025 00:16:53
+#Stop recording: 10/28/2025 18:00:07
 
 
 
-<A name="pn250924012201"></A><B><U><big>pn250924012201</big></U></B>
-#Start recording tcl command: 9/24/2025 00:17:19
-#Project Location: C:/Users/mtatsumi/my_designs/test; Project name: test
-prj_open "C:/Users/mtatsumi/my_designs/test/test.rdf"
-prj_remove_source "C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_keypad.ldc"
-prj_add_source "C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_debouncer.sv"
-prj_remove_source "C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_debouncer.vm"
-prj_disable_source "C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_debouncer_timer.sv"
-prj_disable_source "C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_debouncer.sv"
-prj_add_source "C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_keypad_storage.sv"
-prj_add_source "C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_keypad.sv"
-prj_disable_source "C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_keypad_storage.sv"
-prj_disable_source "C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_keypad.sv"
-prj_add_source "C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_lab3_mt.sv"
-prj_disable_source "C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_lab3_mt.sv"
-prj_add_source "C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_sev_seg.sv"
-prj_add_source "C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_sev_seg_sel.sv"
-prj_add_source "C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_synchronizer.sv"
-prj_disable_source "C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_sev_seg.sv"
-prj_disable_source "C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_sev_seg_sel.sv"
-prj_disable_source "C:/Users/mtatsumi/my_designs/test/source/impl_1/testbench_synchronizer.sv"
+<A name="pn251028182556"></A><B><U><big>pn251028182556</big></U></B>
+#Start recording tcl command: 10/28/2025 18:07:37
+#Project Location: C:/Users/mayut/source/e155/e155-lab3-2; Project name: test
+prj_open "C:/Users/mayut/source/e155/e155-lab3-2/test.rdf"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 10/28/2025 18:25:56
+
+
+
+<A name="pn251028195609"></A><B><U><big>pn251028195609</big></U></B>
+#Start recording tcl command: 10/28/2025 18:37:04
+#Project Location: C:/Users/mayut/source/e155/e155-lab3-2; Project name: test
+prj_open "C:/Users/mayut/source/e155/e155-lab3-2/test.rdf"
+#Stop recording: 10/28/2025 19:56:09
+
+
+
+<A name="pn251029001312"></A><B><U><big>pn251029001312</big></U></B>
+#Start recording tcl command: 10/28/2025 21:35:44
+#Project Location: C:/Users/mayut/source/e155/e155-lab3-2; Project name: test
+prj_open "C:/Users/mayut/source/e155/e155-lab3-2/test.rdf"
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
 prj_run PAR -impl impl_1
 prj_run Export -impl impl_1
 prj_run PAR -impl impl_1
 prj_run Export -impl impl_1
 prj_save 
 prj_close
-#Stop recording: 9/24/2025 01:22:01
+#Stop recording: 10/29/2025 00:13:12
+
+
+
+<A name="pn251029084443"></A><B><U><big>pn251029084443</big></U></B>
+#Start recording tcl command: 10/29/2025 01:44:57
+#Project Location: C:/Users/mayut/source/e155/e155-lab3-2; Project name: test
+prj_open "C:/Users/mayut/source/e155/e155-lab3-2/test.rdf"
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_add_source "C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/key_scan.sv"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_add_source "C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/testbench_key_scan.sv"
+prj_disable_source "C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/testbench_key_scan.sv"
+prj_save 
+prj_close
+#Stop recording: 10/29/2025 08:44:43
+
+
+
+<A name="pn251105042828"></A><B><U><big>pn251105042828</big></U></B>
+#Start recording tcl command: 11/5/2025 04:09:06
+#Project Location: C:/Users/mayut/source/e155/e155-lab3-2; Project name: test
+prj_open "C:/Users/mayut/source/e155/e155-lab3-2/test.rdf"
+prj_add_source "C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/top.sv"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_add_source "C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/counter.sv"
+prj_add_source "C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/sync.sv"
+prj_add_source "C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/pulse.sv"
+prj_add_source "C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/seg_decoder.sv"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_save 
+prj_close
+#Stop recording: 11/5/2025 04:28:28
+
+
+
+<A name="pn251105043256"></A><B><U><big>pn251105043256</big></U></B>
+#Start recording tcl command: 11/5/2025 04:28:58
+#Project Location: C:/Users/mayut/source/e155/e155-lab3-2; Project name: test
+prj_open "C:/Users/mayut/source/e155/e155-lab3-2/test.rdf"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_close
+#Stop recording: 11/5/2025 04:32:56
 
 
 
@@ -206,9 +245,16 @@ prj_close
 
 <DIV id="toc" class="radiant"><span onmousemove="showTocList()">Contents</span>
 <UL id="toc_list">
-<LI><A href=#pn250923222830>pn250923222830</A></LI>
-<LI><A href=#pn250924001653>pn250924001653</A></LI>
-<LI><A href=#pn250924012201>pn250924012201</A></LI>
+<LI><A href=#pn251028173326>pn251028173326</A></LI>
+<LI><A href=#pn251028173603>pn251028173603</A></LI>
+<LI><A href=#pn251028174142>pn251028174142</A></LI>
+<LI><A href=#pn251028180007>pn251028180007</A></LI>
+<LI><A href=#pn251028182556>pn251028182556</A></LI>
+<LI><A href=#pn251028195609>pn251028195609</A></LI>
+<LI><A href=#pn251029001312>pn251029001312</A></LI>
+<LI><A href=#pn251029084443>pn251029084443</A></LI>
+<LI><A href=#pn251105042828>pn251105042828</A></LI>
+<LI><A href=#pn251105043256>pn251105043256</A></LI>
 </UL>
 </DIV>
 

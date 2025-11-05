@@ -48,33 +48,32 @@ Device:  iCE40UP5K
 Package: SG48
 Performance Grade:  High-Performance_1.2V
 
-Mapper:    version Radiant Software (64-bit) 2024.2.0.3.0
-Mapped on: Wed Sep 24 04:37:26 2025
+Mapper:    version Radiant Software (64-bit) 2025.1.0.39.0
+Mapped on: Wed Nov  5 10:01:47 2025
 
 <A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
 
-Command line:   map -pdc C:/Users/mtatsumi/my_designs/test/pinmap.pdc -i
+Command line:   map -pdc C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc -i
      test_impl_1_syn.udb -o test_impl_1_map.udb -mp test_impl_1.mrp -hierrpt
-     -gui -msgset C:/Users/mtatsumi/my_designs/test/promote.xml
+     -gui -msgset C:/Users/mayut/source/e155/e155-lab3-2/promote.xml
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
 
-   Number of slice registers:  63 out of  5280 (1%)
+   Number of slice registers: 122 out of  5280 (2%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:           141 out of  5280 (3%)
-      Number of logic LUT4s:             105
-      Number of inserted feedthru LUT4s:  13
-      Number of replicated LUT4s:          1
-      Number of ripple logic:             11 (22 LUT4s)
-   Number of IO sites used:   23 out of 39 (59%)
-      Number of IO sites used for general PIO: 23
+   Number of LUT4s:           178 out of  5280 (3%)
+      Number of logic LUT4s:              71
+      Number of inserted feedthru LUT4s:   5
+      Number of ripple logic:             51 (102 LUT4s)
+   Number of IO sites used:   18 out of 39 (46%)
+      Number of IO sites used for general PIO: 18
       Number of IO sites used for I3C: 0 out of 2 (0%)
       (note: If I3C is not used, its site can be used as general PIO)
-      Number of IO sites used for PIO+I3C: 23 out of 36 (64%)
+      Number of IO sites used for PIO+I3C: 18 out of 36 (50%)
       Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
       (note: If RGB LED drivers are not used, sites can be used as OD outputs,
        see TN1288 iCE40 LED Driver Usage Guide)
-      Number of IO sites used for PIO+I3C+OD+RGB: 23 out of 39 (59%)
+      Number of IO sites used for PIO+I3C+OD+RGB: 18 out of 39 (46%)
    Number of DSPs:             0 out of 8 (0%)
    Number of I2Cs:             0 out of 2 (0%)
    Number of High Speed OSCs:  1 out of 1 (100%)
@@ -87,45 +86,238 @@ Command line:   map -pdc C:/Users/mtatsumi/my_designs/test/pinmap.pdc -i
    Number of SPIs:             0 out of 2 (0%)
    Number of EBRs:             0 out of 30 (0%)
    Number of PLLs:             0 out of 1 (0%)
-   Number of Clocks:  2
-      Net clk_c: 40 loads, 40 rising, 0 falling (Driver: Pin
-     clk_generation.clk_divided.ff_inst/Q)
-      Net clk_generation.clk_48mhz: 13 loads, 13 rising, 0 falling (Driver: Pin
-     clk_generation.hf_osc.osc_inst/CLKHF)
+   Number of Clocks:  3
+      Net clk_100hz: 1 loads, 1 rising, 0 falling (Driver: Pin
+     clock.clk_divided_100hz/Q)
+      Net clk_10khz: 40 loads, 40 rising, 0 falling (Driver: Pin
+     clock.clk_divided_10khz/Q)
+      Net clock.clk_48mhz: 36 loads, 36 rising, 0 falling (Driver: Pin
+     clock.hf_osc/CLKHF)
    Number of Clock Enables:  3
-      Net clk_generation.counter8_i: 1 loads, 1 SLICEs
-      Net row_obuf[0].vcc: 1 loads, 0 SLICEs
-      Net storage.key_onebit_db_0: 8 loads, 8 SLICEs
-   Number of LSRs:  2
-      Net reset_c_i: 17 loads, 17 SLICEs
-      Net clk_generation.counter8_i_iso: 12 loads, 12 SLICEs
+      Net VCC_net: 1 loads, 0 SLICEs
+      Net n819: 17 loads, 17 SLICEs
+      Net num_new: 2 loads, 2 SLICEs
+   Number of LSRs:  4
+      Net clear: 17 loads, 17 SLICEs
+      Net num_new_N_107: 25 loads, 25 SLICEs
+      Net clock.n784: 17 loads, 17 SLICEs
+      Net clock.n785: 17 loads, 17 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net reset_c: 17 loads
-      Net reset_c_i: 17 loads
-      Net sync_col_c[3]: 15 loads
-      Net keypad_input.un20_li[2]: 14 loads
-      Net keypad_input.un20_li[3]: 14 loads
-      Net clk_generation.counter8_i_iso: 12 loads
-      Net keypad_input.un20_li[4]: 12 loads
-      Net keypad_input.N_170_8: 11 loads
-      Net keypad_input.N_171: 10 loads
-      Net keypad_input.state[19]: 9 loads
+      Net num_new_N_107: 25 loads
+      Net clear: 18 loads
+      Net clock.n784: 17 loads
+      Net clock.n785: 17 loads
+      Net n819: 17 loads
+      Net scan.n157: 12 loads
+      Net VCC_net: 9 loads
+      Net scan.n158: 8 loads
+      Net val[0]: 7 loads
+      Net n119[9]: 4 loads
 
-   Number of warnings:  0
+   Number of warnings:  96
    Number of criticals: 0
    Number of errors:    0
 
 <A name="mrp_dwe"></A><B><U><big>Design Errors/Criticals/Warnings</big></U></B>
 
-   No error, critical, or warning presents.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (5) :
+     No port matched &apos;sync_col[0]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (6) :
+     No port matched &apos;sync_col[1]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (7) :
+     No port matched &apos;sync_col[2]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (8) :
+     No port matched &apos;invertedRows[3]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (9) :
+     No port matched &apos;invertedRows[0]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (10)
+     : No port matched &apos;invertedCols[0]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (11)
+     : No port matched &apos;invertedRows[1]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (12)
+     : No port matched &apos;invertedRows[2]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (13)
+     : No port matched &apos;invertedCols[1]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (14)
+     : No port matched &apos;invertedCols[2]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (15)
+     : No port matched &apos;invertedCols[3]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (17)
+     : No port matched &apos;segs[4]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (18)
+     : No port matched &apos;segs[3]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (19)
+     : No port matched &apos;segs[2]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (20)
+     : No port matched &apos;segs[6]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (21)
+     : No port matched &apos;segs[0]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (22)
+     : No port matched &apos;segs[1]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (23)
+     : No port matched &apos;segs[5]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (24)
+     : No port matched &apos;disp0&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (25)
+     : No port matched &apos;disp1&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (26)
+     : No port matched &apos;invertedCols[3]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (27)
+     : No port matched &apos;invertedCols[0]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (28)
+     : No port matched &apos;invertedCols[1]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (29)
+     : No port matched &apos;invertedCols[2]&apos;.
+WARNING &lt;1027013&gt; - map: No port matched &apos;sync_col[0]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (5) :
+     Can&apos;t resolve object &apos;sync_col[0]&apos; in constraint &apos;ldc_set_location -site
+     {28} [get_ports {sync_col[0]}]&apos;.
+WARNING &lt;1027013&gt; - map: No port matched &apos;sync_col[1]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (6) :
+     Can&apos;t resolve object &apos;sync_col[1]&apos; in constraint &apos;ldc_set_location -site
+     {38} [get_ports {sync_col[1]}]&apos;.
+WARNING &lt;1027013&gt; - map: No port matched &apos;sync_col[2]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (7) :
+     Can&apos;t resolve object &apos;sync_col[2]&apos; in constraint &apos;ldc_set_location -site
+     {42} [get_ports {sync_col[2]}]&apos;.
+WARNING &lt;1027013&gt; - map: No port matched &apos;invertedRows[3]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (8) :
+     Can&apos;t resolve object &apos;invertedRows[3]&apos; in constraint &apos;ldc_set_location
+     -site {11} [get_ports {invertedRows[3]}]&apos;.
+WARNING &lt;1027013&gt; - map: No port matched &apos;invertedRows[0]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (9) :
+     Can&apos;t resolve object &apos;invertedRows[0]&apos; in constraint &apos;ldc_set_location
+     -site {10} [get_ports {invertedRows[0]}]&apos;.
+WARNING &lt;1027013&gt; - map: No port matched &apos;invertedCols[0]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (10)
+     : Can&apos;t resolve object &apos;invertedCols[0]&apos; in constraint &apos;ldc_set_location
+     -site {20} [get_ports {invertedCols[0]}]&apos;.
+WARNING &lt;1027013&gt; - map: No port matched &apos;invertedRows[1]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (11)
+     : Can&apos;t resolve object &apos;invertedRows[1]&apos; in constraint &apos;ldc_set_location
+     -site {21} [get_ports {invertedRows[1]}]&apos;.
+WARNING &lt;1027013&gt; - map: No port matched &apos;invertedRows[2]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (12)
+     : Can&apos;t resolve object &apos;invertedRows[2]&apos; in constraint &apos;ldc_set_location
+     -site {19} [get_ports {invertedRows[2]}]&apos;.
+WARNING &lt;1027013&gt; - map: No port matched &apos;invertedCols[1]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (13)
+     : Can&apos;t resolve object &apos;invertedCols[1]&apos; in constraint &apos;ldc_set_location
+     -site {12} [get_ports {invertedCols[1]}]&apos;.
+WARNING &lt;1027013&gt; - map: No port matched &apos;invertedCols[2]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (14)
+     : Can&apos;t resolve object &apos;invertedCols[2]&apos; in constraint &apos;ldc_set_location
+     -site {13} [get_ports {invertedCols[2]}]&apos;.
+WARNING &lt;1027013&gt; - map: No port matched &apos;invertedCols[3]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (15)
+     : Can&apos;t resolve object &apos;invertedCols[3]&apos; in constraint &apos;ldc_set_location
+     -site {18} [get_ports {invertedCols[3]}]&apos;.
+WARNING &lt;1027013&gt; - map: No port matched &apos;segs[4]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (17)
+     : Can&apos;t resolve object &apos;segs[4]&apos; in constraint &apos;ldc_set_location -site {47}
+     [get_ports {segs[4]}]&apos;.
+WARNING &lt;1027013&gt; - map: No port matched &apos;segs[3]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (18)
+     : Can&apos;t resolve object &apos;segs[3]&apos; in constraint &apos;ldc_set_location -site {46}
+     [get_ports {segs[3]}]&apos;.
+WARNING &lt;1027013&gt; - map: No port matched &apos;segs[2]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (19)
+     : Can&apos;t resolve object &apos;segs[2]&apos; in constraint &apos;ldc_set_location -site {2}
+     [get_ports {segs[2]}]&apos;.
+WARNING &lt;1027013&gt; - map: No port matched &apos;segs[6]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (20)
+     : Can&apos;t resolve object &apos;segs[6]&apos; in constraint &apos;ldc_set_location -site {44}
+     [get_ports {segs[6]}]&apos;.
+WARNING &lt;1027013&gt; - map: No port matched &apos;segs[0]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (21)
+     : Can&apos;t resolve object &apos;segs[0]&apos; in constraint &apos;ldc_set_location -site {48}
+     [get_ports {segs[0]}]&apos;.
+WARNING &lt;1027013&gt; - map: No port matched &apos;segs[1]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (22)
+     : Can&apos;t resolve object &apos;segs[1]&apos; in constraint &apos;ldc_set_location -site {3}
+     [get_ports {segs[1]}]&apos;.
+WARNING &lt;1027013&gt; - map: No port matched &apos;segs[5]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (23)
+     : Can&apos;t resolve object &apos;segs[5]&apos; in constraint &apos;ldc_set_location -site {4}
+     [get_ports {segs[5]}]&apos;.
+WARNING &lt;1027013&gt; - map: No port matched &apos;disp0&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (24)
+     : Can&apos;t resolve object &apos;disp0&apos; in constraint &apos;ldc_set_location -site {6}
+     [get_ports disp0]&apos;.
+WARNING &lt;1027013&gt; - map: No port matched &apos;disp1&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (25)
+     : Can&apos;t resolve object &apos;disp1&apos; in constraint &apos;ldc_set_location -site {9}
+     [get_ports disp1]&apos;.
+WARNING &lt;1027013&gt; - map: No port matched &apos;invertedCols[3]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (26)
+     : Can&apos;t resolve object &apos;invertedCols[3]&apos; in constraint &apos;ldc_set_port -iobuf
+     {DRIVE=NA PULLMODE=6P8K} [get_ports {invertedCols[3]}]&apos;.
+WARNING &lt;1027013&gt; - map: No port matched &apos;invertedCols[0]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (27)
+     : Can&apos;t resolve object &apos;invertedCols[0]&apos; in constraint &apos;ldc_set_port -iobuf
+     {PULLMODE=6P8K} [get_ports {invertedCols[0]}]&apos;.
+WARNING &lt;1027013&gt; - map: No port matched &apos;invertedCols[1]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (28)
+     : Can&apos;t resolve object &apos;invertedCols[1]&apos; in constraint &apos;ldc_set_port -iobuf
+     {PULLMODE=6P8K} [get_ports {invertedCols[1]}]&apos;.
+WARNING &lt;1027013&gt; - map: No port matched &apos;invertedCols[2]&apos;.
+WARNING &lt;1026001&gt; - map: C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (29)
+     : Can&apos;t resolve object &apos;invertedCols[2]&apos; in constraint &apos;ldc_set_port -iobuf
+     {PULLMODE=6P8K} [get_ports {invertedCols[2]}]&apos;.
+WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {28}
+     [get_ports {sync_col[0]}]&apos;.
+WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {38}
+     [get_ports {sync_col[1]}]&apos;.
+WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {42}
+     [get_ports {sync_col[2]}]&apos;.
+WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {11}
+     [get_ports {invertedRows[3]}]&apos;.
+WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {10}
+     [get_ports {invertedRows[0]}]&apos;.
+WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {20}
+     [get_ports {invertedCols[0]}]&apos;.
+WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {21}
+     [get_ports {invertedRows[1]}]&apos;.
+WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {19}
+     [get_ports {invertedRows[2]}]&apos;.
+WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {12}
+     [get_ports {invertedCols[1]}]&apos;.
+WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {13}
+     [get_ports {invertedCols[2]}]&apos;.
+WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {18}
+     [get_ports {invertedCols[3]}]&apos;.
+WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {47}
+     [get_ports {segs[4]}]&apos;.
+WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {46}
+     [get_ports {segs[3]}]&apos;.
+WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {2}
+     [get_ports {segs[2]}]&apos;.
+WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {44}
+     [get_ports {segs[6]}]&apos;.
+WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {48}
+     [get_ports {segs[0]}]&apos;.
+WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {3}
+     [get_ports {segs[1]}]&apos;.
+WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {4}
+     [get_ports {segs[5]}]&apos;.
+WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {6}
+     [get_ports disp0]&apos;.
+WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {9}
+     [get_ports disp1]&apos;.
+WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_port -iobuf
+     {DRIVE=NA PULLMODE=6P8K} [get_ports {invertedCols[3]}]&apos;.
+WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_port -iobuf
+     {PULLMODE=6P8K} [get_ports {invertedCols[0]}]&apos;.
+WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_port -iobuf
+     {PULLMODE=6P8K} [get_ports {invertedCols[1]}]&apos;.
+WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_port -iobuf
+     {PULLMODE=6P8K} [get_ports {invertedCols[2]}]&apos;.
 
 <A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
 
 +---------------------+-----------+-----------+-------+-------+-----------+
 | IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
 |                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| reset               | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | async_col[0]        | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -135,17 +327,11 @@ Command line:   map -pdc C:/Users/mtatsumi/my_designs/test/pinmap.pdc -i
 +---------------------+-----------+-----------+-------+-------+-----------+
 | async_col[3]        | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| row[0]              | OUTPUT    |           |       |       |           |
+| reset               | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| row[1]              | OUTPUT    |           |       |       |           |
+| seg_right_en        | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| row[2]              | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| row[3]              | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| seg1en              | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| seg2en              | OUTPUT    |           |       |       |           |
+| seg_left_en         | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | seg[0]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -161,46 +347,68 @@ Command line:   map -pdc C:/Users/mtatsumi/my_designs/test/pinmap.pdc -i
 +---------------------+-----------+-----------+-------+-------+-----------+
 | seg[6]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| clk                 | OUTPUT    |           |       |       |           |
+| row[0]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| sync_col[0]         | OUTPUT    |           |       |       |           |
+| row[1]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| sync_col[1]         | OUTPUT    |           |       |       |           |
+| row[2]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| sync_col[2]         | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| sync_col[3]         | OUTPUT    |           |       |       |           |
+| row[3]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 
 <A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
 
-Block GND_cZ was optimized away.
 
 <A name="mrp_osc"></A><B><U><big>OSC Summary</big></U></B>
 
 OSC 1:                                 Pin/Node Value
-  OSC Instance Name:                            clk_generation/hf_osc.osc_inst
-  Power UP:                            NODE     row_obuf[0].vcc
-  Enable Signal:                       NODE     row_obuf[0].vcc
-  OSC Output:                          NODE     clk_generation.clk_48mhz
+  OSC Instance Name:                            clock/hf_osc
+  Power UP:                            NODE     VCC_net
+  Enable Signal:                       NODE     VCC_net
+  OSC Output:                          NODE     clock.clk_48mhz
   DIV Setting:                                  00
 
 <A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
 
-Instance Name: clk_generation/hf_osc.osc_inst
+Instance Name: clock/hf_osc
          Type: HFOSC
 
 <A name="mrp_consum"></A><B><U><big>Constraint Summary</big></U></B>
 
-   Total number of constraints: 27
-   Total number of constraints dropped: 0
+   Total number of constraints: 31
+   Total number of constraints dropped: 24
+   Dropped constraints are:
+     ldc_set_location -site {28} [get_ports {sync_col[0]}]
+     ldc_set_location -site {38} [get_ports {sync_col[1]}]
+     ldc_set_location -site {42} [get_ports {sync_col[2]}]
+     ldc_set_location -site {11} [get_ports {invertedRows[3]}]
+     ldc_set_location -site {10} [get_ports {invertedRows[0]}]
+     ldc_set_location -site {20} [get_ports {invertedCols[0]}]
+     ldc_set_location -site {21} [get_ports {invertedRows[1]}]
+     ldc_set_location -site {19} [get_ports {invertedRows[2]}]
+     ldc_set_location -site {12} [get_ports {invertedCols[1]}]
+     ldc_set_location -site {13} [get_ports {invertedCols[2]}]
+     ldc_set_location -site {18} [get_ports {invertedCols[3]}]
+     ldc_set_location -site {47} [get_ports {segs[4]}]
+     ldc_set_location -site {46} [get_ports {segs[3]}]
+     ldc_set_location -site {2} [get_ports {segs[2]}]
+     ldc_set_location -site {44} [get_ports {segs[6]}]
+     ldc_set_location -site {48} [get_ports {segs[0]}]
+     ldc_set_location -site {3} [get_ports {segs[1]}]
+     ldc_set_location -site {4} [get_ports {segs[5]}]
+     ldc_set_location -site {6} [get_ports disp0]
+     ldc_set_location -site {9} [get_ports disp1]
+     ldc_set_port -iobuf {DRIVE=NA PULLMODE=6P8K} [get_ports {invertedCols[3]}]
+     ldc_set_port -iobuf {PULLMODE=6P8K} [get_ports {invertedCols[0]}]
+     ldc_set_port -iobuf {PULLMODE=6P8K} [get_ports {invertedCols[1]}]
+     ldc_set_port -iobuf {PULLMODE=6P8K} [get_ports {invertedCols[2]}]
 
 <A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
 
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
    Peak Memory Usage: 68 MB
-Checksum -- map: 86296880808edcb9d099b5aea1663d3e69d6df62
+Checksum -- map: a7107e6ffd94b9944c8dba1bb8738e82d281ae2a
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995
      AT&amp;T Corp.   All rights reserved.
@@ -208,7 +416,7 @@ Copyright (c) 1995-2001 Lucent
      Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems
      All rights reserved.
-Copyright (c) 2002-2024 Lattice Semiconductor
+Copyright (c) 2002-2025 Lattice Semiconductor
      Corporation,  All rights reserved.
 </PRE></DIV>
 <DIV id="toc" class="radiant"><span onmousemove="showTocList()">Contents</span>

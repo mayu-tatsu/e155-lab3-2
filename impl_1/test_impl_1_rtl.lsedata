@@ -1,12 +1,14 @@
 <top name = "lab3_mt"  library = "work"  arch = ""  entry = "Verilog">
 
 <clocks>
-    <clockitem name = "clk_generation/clk_48mhz"  type = "net" />
+    <clockitem name = "clk_10khz"  type = "net" />
+    <clockitem name = "clk_100hz"  type = "net" />
+    <clockitem name = "clock/clk_48mhz"  type = "net" />
 </clocks>
 
 <!--
     //=============================================================
-    //  Number of Clocks processed: 1
+    //  Number of Clocks processed: 3
     //
     //  If a clock cannot be found in the top level pins section,
     //  that means it is an internal clock.

@@ -1,0 +1,5 @@
+#Start recording tcl command: 10/28/2025 17:57:45
+#Project Location: C:/Users/mayut/source/e155/e155-lab3-2; Project name: test
+prj_open "C:/Users/mayut/source/e155/e155-lab3-2/test.rdf"
+prj_close
+#Stop recording: 10/28/2025 18:00:07

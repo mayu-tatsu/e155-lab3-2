@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <!DOCTYPE		ispXCF	SYSTEM	"IspXCF.dtd" >
-<ispXCF version="R2024.2">
+<ispXCF version="R2025.1">
 	<Comment></Comment>
 	<Chain>
 		<Comm>SPI</Comm>
@@ -18,7 +18,7 @@
 				<BScanVal>0</BScanVal>
 			</Bypass>
 			<File>../../impl_1/test_impl_1.bin</File>
-			<FileTime>09/24/25 02:54:03</FileTime>
+			<FileTime>10/28/25 18:17:54</FileTime>
 			<JedecChecksum>0x15D6</JedecChecksum>
 			<MemoryType>External SPI Flash Memory (SPI FLASH)</MemoryType>
 			<Operation>Erase,Program,Verify</Operation>
@@ -104,6 +104,5 @@
 	<CableOptions>
 		<CableName>USB2</CableName>
 		<PortAdd>FTUSB-0</PortAdd>
-		<USBID>UPduino v3.0 Location 0015 Serial </USBID>
 	</CableOptions>
 </ispXCF>

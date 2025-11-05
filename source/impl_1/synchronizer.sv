@@ -14,7 +14,7 @@ module synchronizer(
 
 	logic [3:0] temp_col;
 
-    always_ff @(posedge clk) begin
+    always_ff @(posedge clk, negedge reset) begin
         if (~reset) begin
             temp_col <= 4'b0;
             sync_col <= 4'b0;
@@ -23,5 +23,4 @@ module synchronizer(
             sync_col <= temp_col;
         end
     end
-
 endmodule

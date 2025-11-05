@@ -35,25 +35,25 @@
 
 
 
+
 -drc_cfg 35103300 20
 -use_io_insertion 1
 
 -resolve_mixed_drivers 0
--path "C:/lscc/radiant/2024.2/ispfpga/ice40tp/data" "C:/Users/mtatsumi/my_designs/test/impl_1" "C:/Users/mtatsumi/my_designs/test"
--ver "C:/lscc/radiant/2024.2/ip/pmi/pmi_iCE40UP.v"
--lib pmi -vhd "C:/lscc/radiant/2024.2/ip/pmi/pmi_iCE40UP.vhd"
--sver "C:/Users/mtatsumi/my_designs/test/source/impl_1/debouncer.sv"
-"C:/Users/mtatsumi/my_designs/test/source/impl_1/clk_gen.sv"
-"C:/Users/mtatsumi/my_designs/test/source/impl_1/debouncer_timer.sv"
-"C:/Users/mtatsumi/my_designs/test/source/impl_1/keypad.sv"
-"C:/Users/mtatsumi/my_designs/test/source/impl_1/keypad_storage.sv"
-"C:/Users/mtatsumi/my_designs/test/source/impl_1/lab3_mt.sv"
-"C:/Users/mtatsumi/my_designs/test/source/impl_1/sev_seg.sv"
-"C:/Users/mtatsumi/my_designs/test/source/impl_1/sev_seg_sel.sv"
-"C:/Users/mtatsumi/my_designs/test/source/impl_1/synchronizer.sv"
+-path "C:/lscc/radiant/2025.1/ispfpga/ice40tp/data" "C:/Users/mayut/source/e155/e155-lab3-2/impl_1" "C:/Users/mayut/source/e155/e155-lab3-2" "C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1"
+-ver "C:/lscc/radiant/2025.1/ip/pmi/pmi_iCE40UP.v"
+-lib pmi -vhd "C:/lscc/radiant/2025.1/ip/pmi/pmi_iCE40UP.vhd"
+-sver "C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/clk_gen.sv"
+"C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/keypad_storage.sv"
+"C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/lab3_mt.sv"
+"C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/sev_seg.sv"
+"C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/sev_seg_sel.sv"
+"C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/synchronizer.sv"
+"C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/keypad_decoder.sv"
+"C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/keypad_scan.sv"
 
 
--path "C:/Users/mtatsumi/my_designs/test"
+-path "C:/Users/mayut/source/e155/e155-lab3-2"
 -top lab3_mt
 -udb "test_impl_1_rtl.udb"
 -output_hdl "test_impl_1.vm"

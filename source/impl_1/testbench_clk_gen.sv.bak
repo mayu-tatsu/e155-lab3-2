@@ -1,0 +1,102 @@
+// testbench_clk_gen.sv
+// Mayu Tatsumi; mtatsumi@g.hmc.edu
+// 2025-10-29
+//
+// Checks that the clk_gen module produces 100 Hz and 10 kHz clock signals
+// with approximately correct timing ratios based on the 48 MHz source clock.
+// Measures and verifies both frequencies and duty cycles by counting simulation time.
+// Outputs total number of tests and errors to the terminal.
+
+`timescale 1 ns / 1 ps
+
+module testbench_clk_gen();
+
+	logic reset;
+	logic clk_100hz, clk_10khz;
+
+	logic [31:0] test_idx, errors;
+	time t_rise_100hz_1, t_rise_100hz_2, t_fall_100hz;
+	time t_rise_10khz_1, t_rise_10khz_2, t_fall_10khz;
+	real period_100hz, period_10khz;
+    real t_high_100hz, t_high_10khz;
+
+	clk_gen dut(reset, clk_100hz, clk_10khz);
+
+	initial begin
+		test_idx = 0;
+		errors = 0;
+		reset = 0; #50; reset = 1;
+	end
+
+	initial begin
+		real ratio;
+        real expected_t_high_100hz;
+        real expected_t_high_10khz; 
+
+		#100; // wait
+
+		// 100 Hz 
+		@(posedge clk_100hz);
+		t_rise_100hz_1 = $time;
+        @(negedge clk_100hz);
+        t_fall_100hz = $time;
+		@(posedge clk_100hz);
+		t_rise_100hz_2 = $time;
+        
+		period_100hz = t_rise_100hz_2 - t_rise_100hz_1;
+        t_high_100hz = t_fall_100hz - t_rise_100hz_1;
+		
+        // Expected period = 10,000,000 ns (10 ms)
+        expected_t_high_100hz = 10_000_000.0 / 2.0; // 50% -> 5 ms
+
+		test_idx++;
+		if ((period_100hz < 9.9e6) || (period_100hz > 10.1e6)) begin
+			$display("Fail: clk_100hz period = %0.2f ns, expected ~10,000,000 ns", test_idx, period_100hz);
+			errors = errors + 1;
+		end else begin
+			$display("Pass: clk_100hz period = %0.2f ns", test_idx, period_100hz);
+		end
+        test_idx++;
+		if ((t_high_100hz < expected_t_high_100hz * 0.99) || (t_high_100hz > expected_t_high_100hz * 1.01)) begin
+			$display("Fail: clk_100hz t_high = %0.2f ns, expected ~%0.0f ns", test_idx, t_high_100hz, expected_t_high_100hz);
+			errors = errors + 1;
+		end else begin
+			$display("Pass: clk_100hz t_high = %0.2f ns", test_idx, t_high_100hz);
+		end
+
+
+		// 10 kHz
+		@(posedge clk_10khz);
+		t_rise_10khz_1 = $time;
+        @(negedge clk_10khz);
+        t_fall_10khz = $time;
+		@(posedge clk_10khz);
+		t_rise_10khz_2 = $time;
+        
+		period_10khz = t_rise_10khz_2 - t_rise_10khz_1;
+        t_high_10khz = t_fall_10khz - t_rise_10khz_1;
+
+        // Expected period = 100,000 ns (0.1 ms)
+        expected_t_high_10khz = 100_000.0 / 2.0; // 50% -> 50 us
+
+		test_idx++;
+		if ((period_10khz < 9.9e4) || (period_10khz > 1.01e5)) begin
+			$display("Fail: clk_10khz period = %0.2f ns, expected ~100,000 ns", test_idx, period_10khz);
+			errors = errors + 1;
+		end else begin
+			$display("Pass: clk_10khz period = %0.2f ns", test_idx, period_10khz);
+		end
+        test_idx++;
+		if ((t_high_10khz < expected_t_high_10khz * 0.99) || (t_high_10khz > expected_t_high_10khz * 1.01)) begin
+			$display("Fail: clk_10khz t_high = %0.2f ns, expected ~%0.0f ns", test_idx, t_high_10khz, expected_t_high_10khz);
+			errors = errors + 1;
+		end else begin
+			$display("Pass: clk_10khz t_high = %0.2f ns", test_idx, t_high_10khz);
+		end
+
+		// --- Summary ---
+		$display("Completed %d tests with %d errors", test_idx, errors);
+		$stop;
+	end
+
+endmodule

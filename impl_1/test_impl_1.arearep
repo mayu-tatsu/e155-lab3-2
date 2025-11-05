@@ -1,51 +1,61 @@
 ----------------------------------------------------------------------
 Report for cell lab3_mt.TECH
-Register bits:  57 of 5280 (1.080%)
+Register bits:  122 of 5280 (2.311%)
 I/O cells:      18
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               CCU2        17          100.0
-                            FD1P3XZ        57          100.0
-                              HSOSC         1          100.0
+                               CCU2        51          100.0
+                            FD1P3XZ       122          100.0
+                         HSOSC_CORE         1          100.0
                                  IB         5          100.0
-                               LUT4        42          100.0
+                               LUT4        69          100.0
                                  OB        13          100.0
 SUB MODULES
                             clk_gen         1
-                             keypad         1
+                        keypad_scan         1
+                     keypad_storage         1
                         sev_seg_sel         1
                        synchronizer         1
-                              TOTAL       139
-----------------------------------------------------------------------
-Report for cell keypad.v1
-Instance Path : keypad_input
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                            FD1P3XZ        15           26.3
-                               LUT4        29           69.0
-                              TOTAL        44
+                              TOTAL       266
 ----------------------------------------------------------------------
 Report for cell sev_seg_sel.v1
 Instance Path : selector
                                   Cell usage:
                                cell     count   Res Usage(%)
-                            FD1P3XZ         1            1.8
-                               LUT4         2            4.8
-                              TOTAL         3
+                            FD1P3XZ         1            0.8
+                               LUT4         3            4.3
+                              TOTAL         4
 ----------------------------------------------------------------------
 Report for cell synchronizer.v1
 Instance Path : sync
                                   Cell usage:
                                cell     count   Res Usage(%)
-                            FD1P3XZ         8           14.0
+                            FD1P3XZ         8            6.6
                               TOTAL         8
 ----------------------------------------------------------------------
-Report for cell clk_gen.v1
-Instance Path : clk_generation
+Report for cell keypad_scan.v1
+Instance Path : scan
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2        17          100.0
-                            FD1P3XZ        33           57.9
-                              HSOSC         1          100.0
-                               LUT4        11           26.2
-                              TOTAL        62
+                                FA2        17           33.3
+                            FD1P3XZ        45           36.9
+                               LUT4        35           50.7
+                              TOTAL        97
+----------------------------------------------------------------------
+Report for cell keypad_storage.v1
+Instance Path : storage
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         2            1.6
+                               LUT4         3            4.3
+                              TOTAL         5
+----------------------------------------------------------------------
+Report for cell clk_gen.v1
+Instance Path : clock
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        34           66.7
+                            FD1P3XZ        66           54.1
+                         HSOSC_CORE         1          100.0
+                               LUT4        22           31.9
+                              TOTAL       123

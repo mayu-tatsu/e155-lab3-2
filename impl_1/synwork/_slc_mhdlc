@@ -1,9 +1,0 @@
-clk_gen
-synchronizer
-keypad
-debouncer_timer
-debouncer
-keypad_storage
-sev_seg_sel
-sev_seg
-lab3_mt

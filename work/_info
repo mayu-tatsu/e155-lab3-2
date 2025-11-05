@@ -63,11 +63,11 @@ R1
 !i10f 100
 cModel Technology
 Z3 dC:/Users/mtatsumi/my_designs/test
-T_opt
-!s110 1758701923
-VH]56jIFaS:R?ScjI:lTz_0
-04 17 4 work testbench_clk_gen fast 0
-=12-00be43eaec33-68d3a963-85-302c
+T_opt1
+!s110 1758714484
+V5W`:JG][[<TG`i1Dmc3<22
+04 16 4 work testbench_keypad fast 0
+=2-00be43eaec33-68d3da74-c6-700
 R1
 Z4 !s12f OEM25U2 
 Z5 !s12b OEM100
@@ -75,23 +75,9 @@ Z6 !s124 OEM100
 Z7 !s135 nogc
 Z8 o-quiet -auto_acc_if_foreign -work work +acc -L iCE40UP
 Z9 tCvgOpt 0
-n@_opt
+n@_opt1
 Z10 OL;O;2024.2;79
 R3
-T_opt1
-!s110 1758714484
-V5W`:JG][[<TG`i1Dmc3<22
-04 16 4 work testbench_keypad fast 0
-=2-00be43eaec33-68d3da74-c6-700
-R1
-R4
-R5
-R6
-R7
-R8
-R9
-n@_opt1
-R10
 T_opt2
 !s110 1758702014
 V>gfZ;M2<D:h^D0AWZR]c12

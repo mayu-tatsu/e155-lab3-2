@@ -1,10 +1,11 @@
+Option definition override for: enable_hydra_infer_clocks_from_latch_data
 Running in Lattice mode
 
                                Synplify Pro (R) 
 
-                Version V-2023.09LR-2 for win64 - Oct 03, 2024 
+              Version W-2024.09LR-SP1-1 for win64 - Jun 12, 2025 
 
-                    Copyright (c) 1988 - 2024 Synopsys, Inc.
+                    Copyright (c) 1988 - 2025 Synopsys, Inc.
    This software and the associated documentation are proprietary to Synopsys,
  Inc. This software may only be used in accordance with the terms and conditions
  of a written license agreement with Synopsys, Inc. All other use, reproduction,
@@ -20,11 +21,11 @@ Running in Lattice mode
             Inclusivity and Diversity" (Refer to article 000036315 at
                         https://solvnetplus.synopsys.com)
 
-Starting:    C:\lscc\radiant\2024.2\synpbase\bin64\mbin\synbatch.exe
-Install:     C:\lscc\radiant\2024.2\synpbase
-Hostname:    HGMZ0R3
-Date:        Wed Sep 24 04:34:03 2025
-Version:     V-2023.09LR-2
+Starting:    C:\lscc\radiant\2025.1\synpbase\bin64\mbin\synbatch.exe
+Install:     C:\lscc\radiant\2025.1\synpbase
+Hostname:    MAYUS-DESKTOP
+Date:        Mon Oct 27 00:01:22 2025
+Version:     W-2024.09LR-SP1-1
 
 Arguments:   -product synplify_base -batch test_impl_1_synplify.tcl
 ProductType: synplify_pro
@@ -33,32 +34,34 @@ ProductType: synplify_pro
 
 
 
-log file: "C:\Users\mtatsumi\my_designs\test\impl_1\test_impl_1.srr"
+
+
+log file: "C:\Users\mayut\source\e155\e155-lab3-2\impl_1\test_impl_1.srr"
 Running: impl_1 in foreground
 
 Running proj_1|impl_1
 
 Running Flow: compile (Compile) on proj_1|impl_1
-# Wed Sep 24 04:34:03 2025
+# Mon Oct 27 00:01:25 2025
 
 Running Flow: compile_flow (Compile Process) on proj_1|impl_1
-# Wed Sep 24 04:34:03 2025
+# Mon Oct 27 00:01:25 2025
 
 Running: compiler (Compile Input) on proj_1|impl_1
-# Wed Sep 24 04:34:03 2025
+# Mon Oct 27 00:01:25 2025
 compiler exited with errors
 Job failed on: proj_1|impl_1
 
 Job: "compiler" terminated with error status: 2
-See log file: "C:\Users\mtatsumi\my_designs\test\impl_1\synlog\test_impl_1_compiler.srr"
-# Wed Sep 24 04:34:04 2025
+See log file: "C:\Users\mayut\source\e155\e155-lab3-2\impl_1\synlog\test_impl_1_compiler.srr"
+# Mon Oct 27 00:01:28 2025
 
 Return Code: 2
-Run Time:00h:00m:01s
+Run Time:00h:00m:03s
 Complete: Compile Process on proj_1|impl_1
 Complete: Compile on proj_1|impl_1
 Complete: Logic Synthesis on proj_1|impl_1
-Copied C:\Users\mtatsumi\my_designs\test\impl_1\test_impl_1.srr to C:\Users\mtatsumi\my_designs\test\impl_1\test_impl_1.srf
+Copied C:\Users\mayut\source\e155\e155-lab3-2\impl_1\test_impl_1.srr to C:\Users\mayut\source\e155\e155-lab3-2\impl_1\test_impl_1.srf
 Error: At line 71 while processing "test_impl_1_synplify.tcl"
 2
 TCL script complete: "test_impl_1_synplify.tcl"
@@ -66,5 +69,5 @@ TCL script had errors: "test_impl_1_synplify.tcl"
 exit status=9
 exit status=9
 Save changes for project:
-C:\Users\mtatsumi\my_designs\test\impl_1\proj_1.prj
+C:\Users\mayut\source\e155\e155-lab3-2\impl_1\proj_1.prj
 batch mode default:no

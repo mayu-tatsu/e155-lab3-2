@@ -872,3 +872,421 @@ run 10000000000
 # ** Note: $stop    : C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/testbench_keypad_scan.sv(73)
 #    Time: 6675 ns  Iteration: 1  Instance: /testbench_keypad_scan
 # Break in Module testbench_keypad_scan at C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/testbench_keypad_scan.sv line 73
+# Compile of clk_gen.sv was successful.
+# Compile of keypad_decoder.sv was successful.
+# Compile of keypad_scan.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# Compile of testbench_keypad_decoder.sv was successful.
+# Compile of testbench_keypad_scan.sv failed with 12 errors.
+# 16 compiles, 1 failed with 12 errors.
+# Compile of clk_gen.sv was successful.
+# Compile of keypad_decoder.sv was successful.
+# Compile of keypad_scan.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# Compile of testbench_keypad_decoder.sv was successful.
+# Compile of testbench_keypad_scan.sv failed with 13 errors.
+# 16 compiles, 1 failed with 13 errors.
+# Compile of clk_gen.sv was successful.
+# Compile of keypad_decoder.sv was successful.
+# Compile of keypad_scan.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# Compile of testbench_keypad_decoder.sv was successful.
+# Compile of testbench_keypad_scan.sv failed with 7 errors.
+# 16 compiles, 1 failed with 7 errors.
+# Compile of clk_gen.sv was successful.
+# Compile of keypad_decoder.sv was successful.
+# Compile of keypad_scan.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# Compile of testbench_keypad_decoder.sv was successful.
+# Compile of testbench_keypad_scan.sv was successful.
+# 16 compiles, 0 failed with no errors.
+vsim -L iCE40UP -voptargs=+acc work2.testbench_keypad_scan
+# End time: 12:51:05 on Nov 05,2025, Elapsed time: 2:17:59
+# Errors: 0, Warnings: 6
+# vsim -L iCE40UP -voptargs="+acc" work2.testbench_keypad_scan 
+# Start time: 12:51:05 on Nov 05,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_keypad_scan(fast)
+# Loading work.keypad_scan(fast)
+add wave  \
+sim:/testbench_keypad_scan/clk \
+sim:/testbench_keypad_scan/reset \
+sim:/testbench_keypad_scan/col \
+sim:/testbench_keypad_scan/rows \
+sim:/testbench_keypad_scan/num_new
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mtatsumi  Hostname: HGMZ0R3  ProcessID: 1792
+#           Attempting to use alternate WLF file "./wlftbr2xin".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftbr2xin
+run 1000000000000
+# Simulating keypress, row=0001 col=0001
+# Pass: num_new detected          1
+# Simulating keypress, row=0001 col=0010
+run 100000000000000
+# Compile of clk_gen.sv was successful.
+# Compile of keypad_decoder.sv was successful.
+# Compile of keypad_scan.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# Compile of testbench_keypad_decoder.sv was successful.
+# Compile of testbench_keypad_scan.sv was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_keypad_scan(fast)
+# Loading work.keypad_scan(fast)
+run 1000000000000
+# Pass: num_new asserted for keypress
+# Pass: num_new asserted for keypress
+# Pass: no key pressed, num_new=0
+# Pass: debounce good
+# Completed testbench
+# 
+# ** Note: $stop    : C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/testbench_keypad_scan.sv(66)
+#    Time: 6675 ns  Iteration: 1  Instance: /testbench_keypad_scan
+# Break in Module testbench_keypad_scan at C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/testbench_keypad_scan.sv line 66
+# Compile of clk_gen.sv was successful.
+# Compile of keypad_decoder.sv was successful.
+# Compile of keypad_scan.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# Compile of testbench_keypad_decoder.sv was successful.
+# Compile of testbench_keypad_scan.sv was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_keypad_scan(fast)
+# Loading work.keypad_scan(fast)
+run 1000000000000
+# Pass: Key (R1,C1) detected
+# Compile of clk_gen.sv was successful.
+# Compile of keypad_decoder.sv was successful.
+# Compile of keypad_scan.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# Compile of testbench_keypad_decoder.sv was successful.
+# Compile of testbench_keypad_scan.sv was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_keypad_scan(fast)
+# Loading work.keypad_scan(fast)
+run 1000000000000
+# Pass: num_new asserted for keypress
+# Pass: num_new asserted for keypress
+# Pass: no key pressed, num_new=0
+# Pass: debounce good
+# Completed testbench
+# 
+# ** Note: $stop    : C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/testbench_keypad_scan.sv(66)
+#    Time: 6675 ns  Iteration: 1  Instance: /testbench_keypad_scan
+# Break in Module testbench_keypad_scan at C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/testbench_keypad_scan.sv line 66
+# Compile of clk_gen.sv was successful.
+# Compile of keypad_decoder.sv was successful.
+# Compile of keypad_scan.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# Compile of testbench_keypad_decoder.sv was successful.
+# Compile of testbench_keypad_scan.sv was successful.
+# 16 compiles, 0 failed with no errors.
+vsim -L iCE40UP -voptargs=+acc work2.testbench_keypad_scan
+# End time: 14:18:16 on Nov 05,2025, Elapsed time: 1:27:11
+# Errors: 0, Warnings: 3
+# vsim -L iCE40UP -voptargs="+acc" work2.testbench_keypad_scan 
+# Start time: 14:18:16 on Nov 05,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vopt-143) Recognized 1 FSM in module "keypad_scan(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_keypad_scan(fast)
+# Loading work.keypad_scan(fast)
+add wave  \
+sim:/testbench_keypad_scan/clk \
+sim:/testbench_keypad_scan/reset \
+sim:/testbench_keypad_scan/col \
+sim:/testbench_keypad_scan/rows \
+sim:/testbench_keypad_scan/num_new
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mtatsumi  Hostname: HGMZ0R3  ProcessID: 1792
+#           Attempting to use alternate WLF file "./wlftkq8eqt".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftkq8eqt
+run 100000000
+# Pass: Key (R1,C1) detected.
+# Pass: Key (R1,C2) detected.
+# Pass: Key (R1,C3) detected.
+# Pass: Key (R1,C4) detected.
+# Pass: Key (R2,C1) detected.
+# Pass: Key (R2,C2) detected.
+# Pass: Key (R2,C3) detected.
+# Pass: Key (R2,C4) detected.
+# Pass: Key (R3,C1) detected.
+# Pass: Key (R3,C2) detected.
+# Pass: Key (R3,C3) detected.
+# Pass: Key (R3,C4) detected.
+# Pass: Key (R4,C1) detected.
+# Pass: Key (R4,C2) detected.
+# Pass: Key (R4,C3) detected.
+# Pass: Key (R4,C4) detected.
+# Pass: no key pressed, num_new=0
+# Pass: debounce working
+# ✅ Completed all keypad tests.
+# ** Note: $stop    : C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/testbench_keypad_scan.sv(72)
+#    Time: 68265 ns  Iteration: 1  Instance: /testbench_keypad_scan
+# Break in Module testbench_keypad_scan at C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/testbench_keypad_scan.sv line 72
+# Compile of clk_gen.sv was successful.
+# Compile of keypad_decoder.sv was successful.
+# Compile of keypad_scan.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# Compile of testbench_keypad_decoder.sv was successful.
+# Compile of testbench_keypad_scan.sv was successful.
+# 16 compiles, 0 failed with no errors.
+vsim -L iCE40UP -voptargs=+acc work2.testbench_keypad_scan
+# End time: 14:23:19 on Nov 05,2025, Elapsed time: 0:05:03
+# Errors: 0, Warnings: 5
+# vsim -L iCE40UP -voptargs="+acc" work2.testbench_keypad_scan 
+# Start time: 14:23:19 on Nov 05,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_keypad_scan(fast)
+# Loading work.keypad_scan(fast)
+# Load canceled
+vsim -L iCE40UP -voptargs=+acc work2.testbench_keypad_scan
+# End time: 14:24:08 on Nov 05,2025, Elapsed time: 0:00:49
+# Errors: 0, Warnings: 2
+# vsim -L iCE40UP -voptargs="+acc" work2.testbench_keypad_scan 
+# Start time: 14:24:08 on Nov 05,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading sv_std.std
+# Loading work.testbench_keypad_scan(fast)
+# Loading work.keypad_scan(fast)
+add wave  \
+sim:/testbench_keypad_scan/clk \
+sim:/testbench_keypad_scan/reset \
+sim:/testbench_keypad_scan/col \
+sim:/testbench_keypad_scan/rows \
+sim:/testbench_keypad_scan/num_new
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mtatsumi  Hostname: HGMZ0R3  ProcessID: 1792
+#           Attempting to use alternate WLF file "./wlfteinyjc".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfteinyjc
+run 10000000000
+# Pass: row 1, col 1 detected.
+# Pass: row 1, col 2 detected.
+# Pass: row 1, col 3 detected.
+# Pass: row 1, col 4 detected.
+# Pass: row 2, col 1 detected.
+# Pass: row 2, col 2 detected.
+# Pass: row 2, col 3 detected.
+# Pass: row 2, col 4 detected.
+# Pass: row 3, col 1 detected.
+# Pass: row 3, col 2 detected.
+# Pass: row 3, col 3 detected.
+# Pass: row 3, col 4 detected.
+# Pass: row 4, col 1 detected.
+# Pass: row 4, col 2 detected.
+# Pass: row 4, col 3 detected.
+# Pass: row 4, col 4 detected.
+# Pass: no key pressed, num_new=0
+# Pass: debounce working
+# Completed testbench.
+# ** Note: $stop    : C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/testbench_keypad_scan.sv(61)
+#    Time: 68265 ns  Iteration: 1  Instance: /testbench_keypad_scan
+# Break in Module testbench_keypad_scan at C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/testbench_keypad_scan.sv line 61
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.testbench_keypad_scan(fast)
+# Loading work.keypad_scan(fast)
+# Compile of clk_gen.sv was successful.
+# Compile of keypad_decoder.sv was successful.
+# Compile of keypad_scan.sv was successful.
+# Compile of keypad_storage.sv was successful.
+# Compile of lab3_mt.sv was successful.
+# Compile of sev_seg.sv was successful.
+# Compile of sev_seg_sel.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of testbench_clk_gen.sv was successful.
+# Compile of testbench_keypad_storage.sv was successful.
+# Compile of testbench_lab3_mt.sv was successful.
+# Compile of testbench_sev_seg.sv was successful.
+# Compile of testbench_sev_seg_sel.sv was successful.
+# Compile of testbench_synchronizer.sv was successful.
+# Compile of testbench_keypad_decoder.sv was successful.
+# Compile of testbench_keypad_scan.sv was successful.
+# 16 compiles, 0 failed with no errors.
+run 10000000000
+# Pass: row 1, col 1 detected.
+# Pass: row 1, col 2 detected.
+# Pass: row 1, col 3 detected.
+# Pass: row 1, col 4 detected.
+# Pass: row 2, col 1 detected.
+# Pass: row 2, col 2 detected.
+# Pass: row 2, col 3 detected.
+# Pass: row 2, col 4 detected.
+# Pass: row 3, col 1 detected.
+# Pass: row 3, col 2 detected.
+# Pass: row 3, col 3 detected.
+# Pass: row 3, col 4 detected.
+# Pass: row 4, col 1 detected.
+# Pass: row 4, col 2 detected.
+# Pass: row 4, col 3 detected.
+# Pass: row 4, col 4 detected.
+# Pass: no key pressed, num_new=0
+# Pass: debounce working
+# Completed testbench.
+# ** Note: $stop    : C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/testbench_keypad_scan.sv(61)
+#    Time: 68265 ns  Iteration: 1  Instance: /testbench_keypad_scan
+# Break in Module testbench_keypad_scan at C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/testbench_keypad_scan.sv line 61
+vsim -L iCE40UP -voptargs=+acc work2.testbench_keypad_scan
+# End time: 14:25:54 on Nov 05,2025, Elapsed time: 0:01:46
+# Errors: 0, Warnings: 2
+# vsim -L iCE40UP -voptargs="+acc" work2.testbench_keypad_scan 
+# Start time: 14:25:54 on Nov 05,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vopt-143) Recognized 1 FSM in module "keypad_scan(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_keypad_scan(fast)
+# Loading work.keypad_scan(fast)
+add wave  \
+sim:/testbench_keypad_scan/clk \
+sim:/testbench_keypad_scan/reset \
+sim:/testbench_keypad_scan/col \
+sim:/testbench_keypad_scan/rows \
+sim:/testbench_keypad_scan/num_new
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mtatsumi  Hostname: HGMZ0R3  ProcessID: 1792
+#           Attempting to use alternate WLF file "./wlft2r4b62".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft2r4b62
+run 10000000000
+# Pass: row 1, col 1 detected.
+# Pass: row 1, col 2 detected.
+# Pass: row 1, col 3 detected.
+# Pass: row 1, col 4 detected.
+# Pass: row 2, col 1 detected.
+# Pass: row 2, col 2 detected.
+# Pass: row 2, col 3 detected.
+# Pass: row 2, col 4 detected.
+# Pass: row 3, col 1 detected.
+# Pass: row 3, col 2 detected.
+# Pass: row 3, col 3 detected.
+# Pass: row 3, col 4 detected.
+# Pass: row 4, col 1 detected.
+# Pass: row 4, col 2 detected.
+# Pass: row 4, col 3 detected.
+# Pass: row 4, col 4 detected.
+# Pass: no key pressed, num_new=0
+# Pass: debounce working
+# Completed testbench.
+# ** Note: $stop    : C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/testbench_keypad_scan.sv(61)
+#    Time: 68065 ns  Iteration: 1  Instance: /testbench_keypad_scan
+# Break in Module testbench_keypad_scan at C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/testbench_keypad_scan.sv line 61

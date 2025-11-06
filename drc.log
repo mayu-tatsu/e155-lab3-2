@@ -1,17 +1,51 @@
 DRC: Design Rule Check Radiant Software (64-bit) 2025.1.0.39.0
-Wed Nov  5 05:21:09 2025
+Wed Nov  5 18:30:35 2025
 
-WARNING <1027013> - No port matched 'async_col[0]'.
-WARNING <1026001> - C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (1) : Can't resolve object 'async_col[0]' in constraint 'ldc_set_port -iobuf {PULLMODE=NA} [get_ports {async_col[0]}]'.
-WARNING <1027013> - No port matched 'async_col[1]'.
-WARNING <1026001> - C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (2) : Can't resolve object 'async_col[1]' in constraint 'ldc_set_port -iobuf {PULLMODE=NA} [get_ports {async_col[1]}]'.
-WARNING <1027013> - No port matched 'async_col[2]'.
-WARNING <1026001> - C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (3) : Can't resolve object 'async_col[2]' in constraint 'ldc_set_port -iobuf {PULLMODE=NA} [get_ports {async_col[2]}]'.
-WARNING <1027013> - No port matched 'async_col[3]'.
-WARNING <1026001> - C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (4) : Can't resolve object 'async_col[3]' in constraint 'ldc_set_port -iobuf {PULLMODE=NA} [get_ports {async_col[3]}]'.
 WARNING <1027013> - No port matched 'sync_col[0]'.
 WARNING <1026001> - C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (5) : Can't resolve object 'sync_col[0]' in constraint 'ldc_set_location -site {28} [get_ports {sync_col[0]}]'.
 WARNING <1027013> - No port matched 'sync_col[1]'.
 WARNING <1026001> - C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (6) : Can't resolve object 'sync_col[1]' in constraint 'ldc_set_location -site {38} [get_ports {sync_col[1]}]'.
 WARNING <1027013> - No port matched 'sync_col[2]'.
 WARNING <1026001> - C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (7) : Can't resolve object 'sync_col[2]' in constraint 'ldc_set_location -site {42} [get_ports {sync_col[2]}]'.
+WARNING <1027013> - No port matched 'invertedRows[3]'.
+WARNING <1026001> - C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (8) : Can't resolve object 'invertedRows[3]' in constraint 'ldc_set_location -site {11} [get_ports {invertedRows[3]}]'.
+WARNING <1027013> - No port matched 'invertedRows[0]'.
+WARNING <1026001> - C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (9) : Can't resolve object 'invertedRows[0]' in constraint 'ldc_set_location -site {10} [get_ports {invertedRows[0]}]'.
+WARNING <1027013> - No port matched 'invertedCols[0]'.
+WARNING <1026001> - C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (10) : Can't resolve object 'invertedCols[0]' in constraint 'ldc_set_location -site {20} [get_ports {invertedCols[0]}]'.
+WARNING <1027013> - No port matched 'invertedRows[1]'.
+WARNING <1026001> - C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (11) : Can't resolve object 'invertedRows[1]' in constraint 'ldc_set_location -site {21} [get_ports {invertedRows[1]}]'.
+WARNING <1027013> - No port matched 'invertedRows[2]'.
+WARNING <1026001> - C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (12) : Can't resolve object 'invertedRows[2]' in constraint 'ldc_set_location -site {19} [get_ports {invertedRows[2]}]'.
+WARNING <1027013> - No port matched 'invertedCols[1]'.
+WARNING <1026001> - C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (13) : Can't resolve object 'invertedCols[1]' in constraint 'ldc_set_location -site {12} [get_ports {invertedCols[1]}]'.
+WARNING <1027013> - No port matched 'invertedCols[2]'.
+WARNING <1026001> - C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (14) : Can't resolve object 'invertedCols[2]' in constraint 'ldc_set_location -site {13} [get_ports {invertedCols[2]}]'.
+WARNING <1027013> - No port matched 'invertedCols[3]'.
+WARNING <1026001> - C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (15) : Can't resolve object 'invertedCols[3]' in constraint 'ldc_set_location -site {18} [get_ports {invertedCols[3]}]'.
+WARNING <1027013> - No port matched 'segs[4]'.
+WARNING <1026001> - C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (17) : Can't resolve object 'segs[4]' in constraint 'ldc_set_location -site {47} [get_ports {segs[4]}]'.
+WARNING <1027013> - No port matched 'segs[3]'.
+WARNING <1026001> - C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (18) : Can't resolve object 'segs[3]' in constraint 'ldc_set_location -site {46} [get_ports {segs[3]}]'.
+WARNING <1027013> - No port matched 'segs[2]'.
+WARNING <1026001> - C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (19) : Can't resolve object 'segs[2]' in constraint 'ldc_set_location -site {2} [get_ports {segs[2]}]'.
+WARNING <1027013> - No port matched 'segs[6]'.
+WARNING <1026001> - C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (20) : Can't resolve object 'segs[6]' in constraint 'ldc_set_location -site {44} [get_ports {segs[6]}]'.
+WARNING <1027013> - No port matched 'segs[0]'.
+WARNING <1026001> - C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (21) : Can't resolve object 'segs[0]' in constraint 'ldc_set_location -site {48} [get_ports {segs[0]}]'.
+WARNING <1027013> - No port matched 'segs[1]'.
+WARNING <1026001> - C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (22) : Can't resolve object 'segs[1]' in constraint 'ldc_set_location -site {3} [get_ports {segs[1]}]'.
+WARNING <1027013> - No port matched 'segs[5]'.
+WARNING <1026001> - C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (23) : Can't resolve object 'segs[5]' in constraint 'ldc_set_location -site {4} [get_ports {segs[5]}]'.
+WARNING <1027013> - No port matched 'disp0'.
+WARNING <1026001> - C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (24) : Can't resolve object 'disp0' in constraint 'ldc_set_location -site {6} [get_ports disp0]'.
+WARNING <1027013> - No port matched 'disp1'.
+WARNING <1026001> - C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (25) : Can't resolve object 'disp1' in constraint 'ldc_set_location -site {9} [get_ports disp1]'.
+WARNING <1027013> - No port matched 'invertedCols[3]'.
+WARNING <1026001> - C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (26) : Can't resolve object 'invertedCols[3]' in constraint 'ldc_set_port -iobuf {DRIVE=NA PULLMODE=6P8K} [get_ports {invertedCols[3]}]'.
+WARNING <1027013> - No port matched 'invertedCols[0]'.
+WARNING <1026001> - C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (27) : Can't resolve object 'invertedCols[0]' in constraint 'ldc_set_port -iobuf {PULLMODE=6P8K} [get_ports {invertedCols[0]}]'.
+WARNING <1027013> - No port matched 'invertedCols[1]'.
+WARNING <1026001> - C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (28) : Can't resolve object 'invertedCols[1]' in constraint 'ldc_set_port -iobuf {PULLMODE=6P8K} [get_ports {invertedCols[1]}]'.
+WARNING <1027013> - No port matched 'invertedCols[2]'.
+WARNING <1026001> - C:/Users/mayut/source/e155/e155-lab3-2/pinmap.pdc (29) : Can't resolve object 'invertedCols[2]' in constraint 'ldc_set_port -iobuf {PULLMODE=6P8K} [get_ports {invertedCols[2]}]'.

@@ -1290,3 +1290,5 @@ run 10000000000
 # ** Note: $stop    : C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/testbench_keypad_scan.sv(61)
 #    Time: 68065 ns  Iteration: 1  Instance: /testbench_keypad_scan
 # Break in Module testbench_keypad_scan at C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/testbench_keypad_scan.sv line 61
+# End time: 14:27:42 on Nov 05,2025, Elapsed time: 0:01:48
+# Errors: 0, Warnings: 4

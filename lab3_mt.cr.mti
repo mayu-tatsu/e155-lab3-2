@@ -47,6 +47,13 @@ Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 Top level modules:
 	sev_seg_sel
 
+} {} {}} C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/testbench_keypad_scan.sv {1 {vlog -work work2 -vopt -sv -stats=none C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/testbench_keypad_scan.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module testbench_keypad_scan
+
+Top level modules:
+	testbench_keypad_scan
+
 } {} {}} C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/testbench_keypad_storage.sv {1 {vlog -work work2 -vopt -sv -stats=none C:/Users/mayut/source/e155/e155-lab3-2/source/impl_1/testbench_keypad_storage.sv
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module testbench_keypad_storage

@@ -2,17 +2,8 @@
 <RadiantProject version="4.2" radiant="2025.1.0.39.0" title="test" device="iCE40UP5K-SG48I" performance_grade="High-Performance_1.2V" family_int="ice40tp" device_int="itpa08" package_int="SG48" operation_int="IND" speed_int="6" default_implementation="impl_1">
     <Options/>
     <Implementation title="impl_1" dir="impl_1" description="impl_1" synthesis="lse" default_strategy="Strategy1">
-        <Options def_top="synchronizer" top="lab3_mt"/>
-        <Source name="source/impl_1/debouncer.sv" type="Verilog" type_short="Verilog">
-            <Options VerilogStandard="System Verilog"/>
-        </Source>
+        <Options def_top="lab3_mt" top="lab3_mt"/>
         <Source name="source/impl_1/clk_gen.sv" type="Verilog" type_short="Verilog">
-            <Options VerilogStandard="System Verilog"/>
-        </Source>
-        <Source name="source/impl_1/debouncer_timer.sv" type="Verilog" type_short="Verilog">
-            <Options VerilogStandard="System Verilog"/>
-        </Source>
-        <Source name="source/impl_1/keypad.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
         <Source name="source/impl_1/keypad_storage.sv" type="Verilog" type_short="Verilog">
@@ -33,19 +24,7 @@
         <Source name="source/impl_1/testbench_clk_gen.sv" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="source/impl_1/testbench_debouncer_timer.sv" type="Verilog" type_short="Verilog" excluded="TRUE">
-            <Options VerilogStandard="System Verilog"/>
-        </Source>
-        <Source name="source/impl_1/testbench_debouncer.sv" type="Verilog" type_short="Verilog" excluded="TRUE">
-            <Options VerilogStandard="System Verilog"/>
-        </Source>
         <Source name="source/impl_1/testbench_keypad_storage.sv" type="Verilog" type_short="Verilog" excluded="TRUE">
-            <Options VerilogStandard="System Verilog"/>
-        </Source>
-        <Source name="source/impl_1/testbench_keypad.sv" type="Verilog" type_short="Verilog" excluded="TRUE">
-            <Options VerilogStandard="System Verilog"/>
-        </Source>
-        <Source name="source/impl_1/testbench_lab3_mt.sv" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options VerilogStandard="System Verilog"/>
         </Source>
         <Source name="source/impl_1/testbench_sev_seg.sv" type="Verilog" type_short="Verilog" excluded="TRUE">
@@ -57,28 +36,16 @@
         <Source name="source/impl_1/testbench_synchronizer.sv" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="source/impl_1/key_scan.sv" type="Verilog" type_short="Verilog">
-            <Options VerilogStandard="System Verilog"/>
-        </Source>
-        <Source name="source/impl_1/testbench_key_scan.sv" type="Verilog" type_short="Verilog" excluded="TRUE">
-            <Options VerilogStandard="System Verilog"/>
-        </Source>
         <Source name="source/impl_1/keypad_decoder.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="source/impl_1/top.sv" type="Verilog" type_short="Verilog">
+        <Source name="source/impl_1/keypad_scan.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="source/impl_1/counter.sv" type="Verilog" type_short="Verilog">
+        <Source name="source/impl_1/testbench_keypad_decoder.sv" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="source/impl_1/sync.sv" type="Verilog" type_short="Verilog">
-            <Options VerilogStandard="System Verilog"/>
-        </Source>
-        <Source name="source/impl_1/pulse.sv" type="Verilog" type_short="Verilog">
-            <Options VerilogStandard="System Verilog"/>
-        </Source>
-        <Source name="source/impl_1/seg_decoder.sv" type="Verilog" type_short="Verilog">
+        <Source name="source/impl_1/testbench_keypad_scan.sv" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options VerilogStandard="System Verilog"/>
         </Source>
         <Source name="pinmap.pdc" type="Physical Constraints File" type_short="PDC">

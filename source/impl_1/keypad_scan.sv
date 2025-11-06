@@ -1,4 +1,4 @@
-// keypad_scan.sv
+// keypad_scan.sv 
 // Mayu Tatsumi; mtatsumi@g.hmc.edu
 // 2025-11-05
 
@@ -7,7 +7,7 @@
 // debouncing logic. num_new is a one-cycle pulse to signal a newly
 // detected key press.
 
-module keypad_scan (
+module keypad_scan(
     input  logic       clk,
     input  logic       reset,
     input  logic [3:0] col,
@@ -34,6 +34,27 @@ module keypad_scan (
     always_ff @(posedge clk, negedge reset)
         if      (~reset)    rows <= 4'b0000;
         else if (rowChange) rows <= newRows;
+			
+	logic [3:0] last_col, last_row;
+	always_ff @(posedge clk, negedge reset)
+		if (~reset) begin
+			last_col <= 4'b0000;
+			last_row <= 4'b0000;
+		end else if (state == S10_PRESSED) begin
+			last_col <= col;
+			last_row <= rows;
+		end
+		
+	// track if last key is still held
+	logic last_key_still_held;
+	
+	always_ff @(posedge clk, negedge reset)
+		if (~reset)
+			last_key_still_held <= 0;
+		else if (state == S10_PRESSED)
+			last_key_still_held <= 1;
+		else if (~|col)        // no key pressed
+			last_key_still_held <= 0;
 
     // counter for delays, mini timer
 	logic [31:0] counter;
@@ -82,8 +103,24 @@ module keypad_scan (
 			end
             S10_PRESSED: 		nextstate = S11_WAIT;
             S11_WAIT: begin
-                if   (~|col && counter >= HOLD_TIME) nextstate = S0_IDLE;
-                else								 nextstate = S11_WAIT;
+				if (last_key_still_held) begin
+					if ((col & last_col) != 0 && (rows & last_row) != 0) begin
+						nextstate = S11_WAIT;
+					end
+					// If all keys released, go idle after HOLD_TIME
+					else if (~|col && counter >= HOLD_TIME) begin
+						nextstate = S0_IDLE;
+					end
+					// If a completely new key appears, debounce it
+					else if ((|col) && ((col & last_col) == 0 || (rows & last_row) == 0) && (counter >= DEBOUNCE)) begin
+						nextstate = S9_CHECKING;
+					end
+					else nextstate = S11_WAIT;
+				end else begin
+					// last key not held; if new key pressed, go check it
+					if (|col) nextstate = S9_CHECKING;
+					else nextstate = S11_WAIT;
+				end
 			end
             default: nextstate = S0_IDLE;
         endcase
